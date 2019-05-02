@@ -7,6 +7,8 @@
 
 # RLumBuild <img width=120px src="man/figures/RLumBuild-logo.svg" align="right" />
 
+## Installation
+
 ## License
 
 This program is free software: you can redistribute it and/or modify it

@@ -5,7 +5,7 @@
 * using option ‘--no-manual’
 * checking for file ‘RLumBuild/DESCRIPTION’ ... OK
 * checking extension type ... Package
-* this is package ‘RLumBuild’ version ‘0.1.0’
+* this is package ‘RLumBuild’ version ‘0.1.0.9000-2’
 * package encoding: UTF-8
 * checking package namespace information ... OK
 * checking package dependencies ... OK
