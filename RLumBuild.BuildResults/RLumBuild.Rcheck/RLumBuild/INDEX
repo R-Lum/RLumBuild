@@ -17,4 +17,4 @@ module_verify_ExampleTimings
                         Verify Example Timings
 module_write_BibTeX     Create Package BibTeX file
 module_write_FunctionList
-                        Write Function List
+                        Write Function Argument List

@@ -19,6 +19,6 @@ Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaign
 } 
 
 \section{How to cite}{
-Kreutzer, S. (2019). module_verify_ExampleTimings(): Verify Example Timings. Function version 0.1.0. In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR package version 0.1.0.9000-27. https://CRAN.R-project.org/package=RLumBuild
+Kreutzer, S. (2019). module_verify_ExampleTimings(): Verify Example Timings. Function version 0.1.0. In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR package version 0.1.0.9000-31. https://CRAN.R-project.org/package=RLumBuild
 }
 
