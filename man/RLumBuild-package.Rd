@@ -4,7 +4,11 @@
 \name{RLumBuild-package}
 \alias{RLumBuild-package}
 \alias{RLumBuild}
-\title{RLum Universe Package Building}
+\title{RLum Universe Package Building
+
+#' \if{html}{
+\figure{RLumBuild.svg}{options: width="50px" alt="r-luminescence.org"}\cr
+}}
 \description{
 Build packages from the RLum-universe.
 A collection of tools and scripts to unify the building of packages.

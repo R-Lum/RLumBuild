@@ -1,4 +1,4 @@
-RLumBuild-package       RLum Universe Package Building
+RLumBuild-package       RLum Universe Package Building #'
 build_package           Check and Build Package
 module_add_HowToCite    Add How to Cite Section
 module_add_RLumTeam     Module: add RLum-Team and update version
