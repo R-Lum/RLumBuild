@@ -1,6 +1,7 @@
 RLumBuild-package	RLumBuild-package
 .failure	helpers
 .get_pkg_name	helpers
+.get_pkg_version	helpers
 .neutral	helpers
 .running	helpers
 .run_module	helpers
@@ -18,4 +19,5 @@ module_register_EntryPoints	module_register_EntryPoints
 module_set_VersionNumber	module_set_VersionNumber
 module_verify_ExampleTimings	module_verify_ExampleTimings
 module_write_BibTeX	module_write_BibTeX
+module_write_FunctionList	module_write_FunctionList
 RLumBuild	RLumBuild-package

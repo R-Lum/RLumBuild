@@ -114,6 +114,9 @@ build_package <- function(
   if(!"module_write_BibTeX" %in% exclude)
     .run_module(text = "Create package BibTeX file ...", f = module_write_BibTeX())
 
+  if(!"module_write_FunctionList" %in% exclude)
+    .run_module(text = "Create function list (*.html/*.csv/*.md) ...", f = module_write_FunctionList())
+
   # Install -------------------------------------------------------------------------------
   cat("\n")
   cli::cat_rule("Install package")

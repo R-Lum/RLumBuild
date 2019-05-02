@@ -116,3 +116,14 @@ NULL
   strsplit(x = readLines("DESCRIPTION", n = 1), split = "Package: ", fixed = TRUE)[[1]][2]
 
 }
+
+
+#'@rdname helpers
+#'
+#'@md
+#'@export
+.get_pkg_version <- function(){
+   temp <- readLines("DESCRIPTION", n = 10)
+   strsplit(x = temp[grepl(pattern = "Version: ", x = temp, fixed = TRUE)], split = "Version: ", fixed = TRUE)[[1]][2]
+
+}
