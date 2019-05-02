@@ -14,4 +14,5 @@ module_register_EntryPoints
 module_set_VersionNumber
                         Module: set_VersionNumber
 module_verify_ExampleTimings
-                        Veriyf Example Timings
+                        Verify Example Timings
+module_write_BibTeX     Create Package BibTeX file

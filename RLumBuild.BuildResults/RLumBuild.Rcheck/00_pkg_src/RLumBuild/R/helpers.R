@@ -107,3 +107,12 @@ NULL
   invisible(output)
 
 }
+
+#'@rdname helpers
+#'
+#'@md
+#'@export
+.get_pkg_name <- function(){
+  strsplit(x = readLines("DESCRIPTION", n = 1), split = "Package: ", fixed = TRUE)[[1]][2]
+
+}

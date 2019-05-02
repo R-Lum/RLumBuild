@@ -1,6 +1,11 @@
-#' @title  Veriyf Example Timings
+#' @title  Verify Example Timings
 #'
-#' @author Sebastian Kreutzer
+#' @description Check and display the timing results of the example checks to avoid too long
+#' example runs.
+#'
+#' @author Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (France)
+#'
+#' @section Function version: 0.1.0
 #'
 #'@md
 #'@export
@@ -15,6 +20,11 @@ temp.version <- sub(" ","",unlist(strsplit(temp,":"))[2])
 
 # CHECK EXAMPLE TIMING ----------------------------------------------------
 timing.threshold <- 3
+
+if(!file.exists(paste0(pkg_name,".BuildResults/",pkg_name,".Rcheck/",pkg_name,"-Ex.timings")) &&
+   !file.exists(paste0(pkg_name,".BuildResults/",pkg_name,".Rcheck/examples_x64/",pkg_name,"-Ex.timings")))
+  stop("[module_very_ExampleTimings()] Nothing to verify, the package does not run examples!", call. = FALSE)
+
 if (Sys.info()[["sysname"]] == "Windows") {
   temp <- read.table(paste0(pkg_name,".BuildResults/",pkg_name,".Rcheck/examples_x64/",pkg_name,"-Ex.timings"), header=TRUE)
 

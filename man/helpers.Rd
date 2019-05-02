@@ -8,6 +8,7 @@
 \alias{.neutral}
 \alias{.shut_up}
 \alias{.run_module}
+\alias{.get_pkg_name}
 \title{RLumBuild Helper Functions}
 \usage{
 .running(text = "")
@@ -21,6 +22,8 @@
 .shut_up(expr)
 
 .run_module(text = "", f = NULL)
+
+.get_pkg_name()
 }
 \arguments{
 \item{text}{\link{character} (with default): text to display in the terminal}
@@ -37,7 +40,7 @@ Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaign
 } 
 
 \section{How to cite}{
-Kreutzer, S. (2019). helpers(): RLumBuild Helper Functions. In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR package version 0.1.0.9000-4. https://CRAN.R-project.org/package=RLumBuild
+Kreutzer, S. (2019). helpers(): RLumBuild Helper Functions. In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR package version 0.1.0.9000-22. https://CRAN.R-project.org/package=RLumBuild
 }
 
 \keyword{internal}

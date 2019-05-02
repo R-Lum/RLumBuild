@@ -1,5 +1,7 @@
 #' @title Check and Build Package
 #'
+#' @param path [character] (with default): set package path
+#'
 #' @param exclude [character] (optional): names of build modules you want to exclude
 #'
 #' @param as_cran [logical] (with default): enable/disable `--as-cran` check
@@ -9,13 +11,22 @@
 #' @md
 #' @export
 build_package <- function(
+  path = ".",
   exclude = NULL,
   as_cran = FALSE
 
 ){
 
-  ##check package name, which should be the folder name
-  pkg_name <- basename(getwd())
+  ##set path
+  setwd(path)
+
+  ##get pkg_name
+  pkg_name <- .get_pkg_name()
+
+  # Retrive information -------------------------------------------------------------------------
+  cli::cat_rule("Retrieve package information")
+  cat(crayon::blue(cli::symbol$arrow_right, "Working directory: ", getwd(), "\n"),sep = "")
+  cat(crayon::blue(cli::symbol$arrow_right, "Package name: ", pkg_name,"\n\n"), sep = "")
 
   # Prebuild scripts ----------------------------------------------------------------------------
   cli::cat_rule("Pre-build clean-up")
@@ -80,11 +91,11 @@ build_package <- function(
 
   # # check package -------------------------------------------------------------------------------
   cat("\n")
-  devtools::check_built(
+  print(devtools::check_built(
     path = list.files(paste0(pkg_name,".BuildResults"), pattern = ".tar.gz", full.names = TRUE, ),
     cran = as_cran,
     force_suggests = TRUE,
-    check_dir = paste0(pkg_name,".BuildResults"))
+    check_dir = paste0(pkg_name,".BuildResults")))
 
   ##>> Verify example timing
   cat("\n")
@@ -95,6 +106,14 @@ build_package <- function(
   # # Build PDF manual ------------------------------------------------------------------------
   .run_module(text = "Build PDF manual ...", f = devtools::build_manual(pkg = ".", path = paste0(pkg_name,".BuildResults/")))
 
+
+  ## Outro  -------------------------------------------------------------------------------
+  cat("\n")
+  cli::cat_rule("Outro")
+
+  if(!"module_write_BibTeX" %in% exclude)
+    .run_module(text = "Create package BibTeX file ...", f = module_write_BibTeX())
+
   # Install -------------------------------------------------------------------------------
   cat("\n")
   cli::cat_rule("Install package")
@@ -104,9 +123,6 @@ build_package <- function(
     type = "source",
     clean = TRUE)
 
-  ## Install -------------------------------------------------------------------------------
-  cat("\n")
-  cli::cat_rule("Outro")
 
 
 

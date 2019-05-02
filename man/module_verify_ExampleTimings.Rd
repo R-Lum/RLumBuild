@@ -2,18 +2,23 @@
 % Please edit documentation in R/module_verify_ExampleTimings.R
 \name{module_verify_ExampleTimings}
 \alias{module_verify_ExampleTimings}
-\title{Veriyf Example Timings}
+\title{Verify Example Timings}
 \usage{
 module_verify_ExampleTimings()
 }
 \description{
-Veriyf Example Timings
+Check and display the timing results of the example checks to avoid too long
+example runs.
 }
+\section{Function version}{
+ 0.1.0
+}
+
 \author{
-Sebastian Kreutzer
+Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (France)
 } 
 
 \section{How to cite}{
-Kreutzer, S. (2019). module_verify_ExampleTimings(): Veriyf Example Timings. In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR package version 0.1.0.9000-4. https://CRAN.R-project.org/package=RLumBuild
+Kreutzer, S. (2019). module_verify_ExampleTimings(): Verify Example Timings. Function version 0.1.0. In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR package version 0.1.0.9000-22. https://CRAN.R-project.org/package=RLumBuild
 }
 

@@ -1,5 +1,6 @@
 RLumBuild-package	RLumBuild-package
 .failure	helpers
+.get_pkg_name	helpers
 .neutral	helpers
 .running	helpers
 .run_module	helpers
@@ -16,4 +17,5 @@ module_knit_README	module_knit_README
 module_register_EntryPoints	module_register_EntryPoints
 module_set_VersionNumber	module_set_VersionNumber
 module_verify_ExampleTimings	module_verify_ExampleTimings
+module_write_BibTeX	module_write_BibTeX
 RLumBuild	RLumBuild-package
