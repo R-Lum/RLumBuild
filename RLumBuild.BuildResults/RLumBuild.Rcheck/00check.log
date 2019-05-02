@@ -19,7 +19,10 @@
 * checking installed package size ... OK
 * checking package directory ... OK
 * checking DESCRIPTION meta-information ... OK
-* checking top-level files ... OK
+* checking top-level files ... NOTE
+File
+  LICENSE
+is not mentioned in the DESCRIPTION file.
 * checking for left-over files ... OK
 * checking index information ... OK
 * checking package subdirectories ... OK
@@ -45,4 +48,4 @@
 * checking for unstated dependencies in examples ... OK
 * checking examples ... OK
 * DONE
-Status: OK
+Status: 1 NOTE
