@@ -14,6 +14,6 @@ Sebastian Kreutzer
 } 
 
 \section{How to cite}{
-Kreutzer, S. (2019). module_verify_ExampleTimings(): Veriyf Example Timings. In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR package version 0.1.0.9000-2. https://CRAN.R-project.org/package=RLumBuild
+Kreutzer, S. (2019). module_verify_ExampleTimings(): Veriyf Example Timings. In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR package version 0.1.0.9000-4. https://CRAN.R-project.org/package=RLumBuild
 }
 

@@ -2,14 +2,15 @@
 #'
 #' @param exclude [character] (optional): names of build modules you want to exclude
 #'
-#' @examples
+#' @param as_cran [logical] (with default): enable/disable `--as-cran` check
 #'
-#' print("test")
+#' @author Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (France)
 #'
 #' @md
 #' @export
 build_package <- function(
-  exclude = NULL
+  exclude = NULL,
+  as_cran = FALSE
 
 ){
 
@@ -81,7 +82,7 @@ build_package <- function(
   cat("\n")
   devtools::check_built(
     path = list.files(paste0(pkg_name,".BuildResults"), pattern = ".tar.gz", full.names = TRUE, ),
-    cran = FALSE,
+    cran = as_cran,
     force_suggests = TRUE,
     check_dir = paste0(pkg_name,".BuildResults"))
 

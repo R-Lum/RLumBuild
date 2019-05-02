@@ -17,9 +17,64 @@ library(RLumBuild)
 
 # RLumBuild <img width=120px src="man/figures/RLumBuild-logo.svg" align="right" />
 
+Build packages from the RLum-universe. A collection of tools and scripts to unify the building of packages.
+
+Over the years our RLum-package universe expanded. At the same time building and maintaining the various packages became more and more complex. While at the beginning we used tools, such as the 'devtools' package, bugs and changes of the CRAN requirements forced us to develop custom-tailored build scripts. 
+First, those scripts where simple R-scripts, run via `R CMD BATCH` from terminal scripts, making it tedious to handle them across different packages. On the top, we needed separate shell-scrips for all the three major OS platforms. Now 'RLumBuild` provides a unified environment to check and build our **R** packages. 
+
+The package is more than a collection of the scripts we had developed so far. The central function is called `build_package()` and can be run without further arguments. The function calls standard check and build functions from `'devtools'` but also runs
+further custom modules (functions in the package 'RLumBuild'), to, e.g., add a new section 'How to cite' to 
+add function related citation information. 
+
+## Examples
+
+Packages can be build by simply calling 
+
+```{r, eval=FALSE}
+RLumBuld::build_package()
+```
+
+A bash script that can be used in conjunction with *RStudio* (Project Options >> Build Tools >> 
+Project Build Tools >> [Custom]) may look as follows
+
+```{}
+#!/bin/bash
+
+R -q -e "RLumBuild::build_package()"
+```
+
+The function itself does not require arguments, however, two arguments can 
+be provided `exclude` and `as_cran`:
+
+### `exclude`
+
+The first argument allows to exclude modules from processing. Every module (see package
+documentation) provided will be excluded, e.g, the subsequent call prevents the `NEWS.md` file
+from being created. 
+
+```{r, eval = FALSE}
+RLumBuld::build_package(exclude = c("module_knit_NEWS"))
+```
+
+All functions (modules) from the package 'RLumBuild' starting with `module_` can be excluded from 
+the steps can be excluded from the build provcess. Other modules are indispensable (package build)
+or are skipped if not relevant for the package (e.g., compbile DLLs)
+
+### `as_cran`
+
+This argument allows enable/disable the `--as-cran` check.
+
+```{r, eval = FALSE}
+RLumBuld::build_package(as_cran = TRUE)
+```
+
 ## Installation 
 
-
+```{r, eval=FALSE}
+if(!require("devtools"))
+  install.packages("devtools")
+devtools::install_github("R-Lum/RLumBuild@master")
+```
 
 
 ## License

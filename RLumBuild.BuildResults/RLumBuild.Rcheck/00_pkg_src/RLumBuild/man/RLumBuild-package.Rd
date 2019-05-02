@@ -7,7 +7,7 @@
 \title{RLum Universe Package Building
 
 #' \if{html}{
-\figure{RLumBuild.svg}{options: width="50px" alt="r-luminescence.org"}\cr
+\figure{RLumBuild-logo.svg}{options: width="50px"}\cr
 }}
 \description{
 Build packages from the RLum-universe.
