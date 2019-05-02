@@ -126,6 +126,14 @@ build_package <- function(
     type = "source",
     clean = TRUE)
 
+  ## Revers dependency check --------------------------------------------------------------
+  if(!"module_check_ReverseDependency" %in% exclude){
+    cat("\n")
+    cli::cat_rule("Reverse dependency check")
+    .run_module(text = "Reverse dependency check ... ", module_check_ReverseDependencies(), shut_up = FALSE)
+
+  }
+
   ## Outro  -------------------------------------------------------------------------------
   cat("\n")
   cli::cat_rule("Outro")

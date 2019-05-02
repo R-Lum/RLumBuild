@@ -80,13 +80,22 @@ NULL
 #'@export f [function] (**required**): function to be run, the results are analysed and
 #'summarised using the a one line terminal output
 #'
+#'@param shut_up [logical] (with default): enables/disables shut_up mode
+#'
 #'@md
 #'@export
-.run_module <- function(text = "", f = NULL){
+.run_module <- function(text = "", f = NULL, shut_up = TRUE){
   .running(text)
 
   ##run function
-  output <- .shut_up(f)
+  if(shut_up){
+    output <- .shut_up(f)
+
+  }else{
+    output <- try(eval(f, parent.frame()))
+
+  }
+
 
   ##check output
   if(is.null(output) || length(output) == 0 || (class(output[[1]]) == "logical" && output[[1]] == FALSE)){

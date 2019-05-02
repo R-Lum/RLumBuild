@@ -1,3 +1,6 @@
 #!/bin/bash
+R -q -e "RLumBuild::build_package(
+  exclude = c('module_check_ReverseDependencies'),
+  as_cran = FALSE
 
-R -q -e "RLumBuild::build_package()"
+)"

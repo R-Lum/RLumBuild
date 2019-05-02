@@ -18,6 +18,6 @@ Sebastian Kreutzer
 } 
 
 \section{How to cite}{
-Kreutzer, S. (2019). module_add_RLumTeam(): Module: add RLum-Team and update version timestamp. Function version 0.1.0. In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR package version 0.1.0.9000-42. https://CRAN.R-project.org/package=RLumBuild
+Kreutzer, S. (2019). module_add_RLumTeam(): Module: add RLum-Team and update version timestamp. Function version 0.1.0. In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR package version 0.1.0.9000-47. https://CRAN.R-project.org/package=RLumBuild
 }
 

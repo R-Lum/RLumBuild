@@ -22,7 +22,7 @@
 
 .shut_up(expr)
 
-.run_module(text = "", f = NULL)
+.run_module(text = "", f = NULL, shut_up = TRUE)
 
 .get_pkg_name()
 
@@ -33,6 +33,8 @@
 
 \item{expr}{\link{expression} (\strong{required}): R expression to be excecuted in silence, the results is piped
 through and the output muted (messages, warnings and usual terminal prints). Errors are returned.}
+
+\item{shut_up}{\link{logical} (with default): enables/disables shut_up mode}
 }
 \description{
 Helper functions which are used internally to visualise the console output.
@@ -43,7 +45,7 @@ Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaign
 } 
 
 \section{How to cite}{
-Kreutzer, S. (2019). helpers(): RLumBuild Helper Functions. In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR package version 0.1.0.9000-42. https://CRAN.R-project.org/package=RLumBuild
+Kreutzer, S. (2019). helpers(): RLumBuild Helper Functions. In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR package version 0.1.0.9000-47. https://CRAN.R-project.org/package=RLumBuild
 }
 
 \keyword{internal}

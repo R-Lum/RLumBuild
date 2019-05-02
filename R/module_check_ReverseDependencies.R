@@ -12,6 +12,8 @@
 #' @export
 module_check_ReverseDependencies <- function(){
 
+cat("\n")
+
 ##get package name
 pkg_name <- .get_pkg_name()
 
