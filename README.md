@@ -55,7 +55,7 @@ devtools::install_github("R-Lum/RLumBuild@master")
 A packages builds by simply calling
 
 ``` r
-RLumBuld::build_package()
+RLumBuild::build_package()
 ```
 
 In conjunction with
@@ -90,7 +90,7 @@ argument `exclude`, e.g, the subsequent call prevents the `NEWS.md` file
 from being created.
 
 ``` r
-RLumBuld::build_package(exclude = c("module_knit_NEWS"))
+RLumBuild::build_package(exclude = c("module_knit_NEWS"))
 ```
 
 #### `as_cran`
@@ -98,7 +98,7 @@ RLumBuld::build_package(exclude = c("module_knit_NEWS"))
 This argument allows to enable/disable the `--as-cran` check.
 
 ``` r
-RLumBuld::build_package(as_cran = TRUE)
+RLumBuild::build_package(as_cran = TRUE)
 ```
 
 ## License
@@ -117,6 +117,7 @@ more details.
 
 ## Projects using RLumBuild
 
+  - \[BayLum\]((<https://github.com/R-Lum/BayLum>)
   - [Luminescence](https://github.com/R-Lum/Luminescence)
   - [RCarb](https://github.com/R-Lum/RCarb)
   - [rxylib](https://github.com/R-Lum/rxylib)

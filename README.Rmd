@@ -105,6 +105,7 @@ any later version.
 
 ## Projects using RLumBuild
 
+* [BayLum]((https://github.com/R-Lum/BayLum)
 * [Luminescence](https://github.com/R-Lum/Luminescence)
 * [RCarb](https://github.com/R-Lum/RCarb)
 * [rxylib](https://github.com/R-Lum/rxylib)
