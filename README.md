@@ -117,6 +117,8 @@ more details.
 
 ## Projects using RLumBuild
 
+  - [Luminescence](https://github.com/R-Lum/Luminescence)
+
 ## <span class="glyphicon glyphicon-euro"></span> Funding
 
 In 2019, the work of Sebastian Kreutzer as maintainer of the package was

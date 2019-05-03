@@ -44,7 +44,8 @@ build_package <- function(
   # Prebuild scripts ----------------------------------------------------------------------------
   cli::cat_rule("Pre-build housekeeping")
 
-  ##overwrite or create .Rbuildignore
+  ##overwrite or create .Rbuildignore and add package stuff
+  ##TODO might become part of an own module
   if(write_Rbuildignore){
     .run_module(text = "Create/overwrite .Rbuildignore with standard ... ",
                 f = file.copy(
@@ -52,7 +53,7 @@ build_package <- function(
                   to = ".Rbuildignore", overwrite = TRUE))
 
     ##add folders that start with the pkg_name
-    cat(paste0("\n # -- Package stuff -- \n\n ^",pkg_name,"\\.$"), file=".Rbuildignore", append = TRUE)
+    cat(paste0("\n\n# -- Package '",pkg_name,"' stuff -- \n^",pkg_name,"\\..*$"), file=".Rbuildignore", append = TRUE)
 
   }
 

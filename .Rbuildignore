@@ -8,6 +8,7 @@
 ^NEWS\.Rmd$
 ^NEWS\.html$
 ^cran-comments\.md$
+^cran-comments\.html$
 ^\.Rprofile$
 
 # -- Exclude RStudio files --
@@ -35,6 +36,6 @@
 ^vignettes/.*files$
 ^vignettes/.*\.xsyg$
 ^vignettes/.*\.bib$
- # -- Package stuff -- 
 
- ^RLumBuild\.$
+# -- Package 'RLumBuild' stuff -- 
+^RLumBuild\..*$

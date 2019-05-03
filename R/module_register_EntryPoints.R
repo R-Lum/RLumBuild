@@ -17,17 +17,20 @@ module_register_EntryPoints<- function() {
   init <- utils::capture.output(tools::package_native_routine_registration_skeleton(".", character_only = FALSE))
 
   if(length(init) != 0){
-  ##add header text
-  header <-  c(
-    "/* DO NOT CHANGE MANUALLY! */",
-    "/* This file was produced by RLumBuild::.module_register_EntryPoints< */")
+    ##add header text
+    header <-  c(
+      "/* DO NOT CHANGE MANUALLY! */",
+      "/* This file was produced by RLumBuild::.module_register_EntryPoints< */")
 
 
-  ##write file
-  write(x = c(header, init), file = paste0("src/", pkg_name, "_init.c"))
+    ##write file
+    write(x = c(header, init), file = paste0("src/", pkg_name, "_init.c"))
+
   }else{
     invisible(NULL)
 
   }
 
+  ##return what we have to return
+  return(TRUE)
 }
