@@ -73,10 +73,13 @@ build_package <- function(
   ##>> Various files
   .run_module(text = "Remove .DS_Store ...", f = file.remove(".DS_Store"))
   .run_module(text = "Remove .Rhistory ...", f = file.remove(".Rhistory"))
-  .run_module(text = "Remove .Rhistory ...", f = file.remove(".Rhistory"))
   .run_module(text = "Remove .RData ...", f = file.remove(".RData"))
   .run_module(text = "Remove .RcppExports.cpp ...", f = file.remove("src/RcppExports.cpp"))
   .run_module(text = "Remove .RcppExports.R ...", f = file.remove("R/RcppExports.R"))
+  .run_module(text = "Remove src/*.o ... ", f = file.remove(
+    list.files("src/", pattern = "\\.o", recursive = TRUE, full.names = TRUE)))
+  .run_module(text = "Remove src/*.so ... ", f = file.remove(
+    list.files("src/", pattern = "\\.so", recursive = TRUE, full.names = TRUE)))
 
   cat("\n")
   cli::cat_rule("Pre-build modules")
@@ -101,14 +104,9 @@ build_package <- function(
   if(!"module_set_VersionNumber" %in% exclude)
     .run_module(text = "Update DESCRIPTION: date and version number ...", f = module_set_VersionNumber())
 
-  ##>> Register Entry points
-  if(!"module_register_EntryPoints" %in% exclude)
-    .run_module(text = "Register C/C++ entry points ...", f = module_register_EntryPoints())
-
   ##>> Add RLum-Team
   if(!"module_add_HowToCite" %in% exclude)
     .run_module(text = "Add 'How to cite' section in manual ...", f = module_add_HowToCite())
-
 
   # # Build source package ------------------------------------------------------------------------
   cat("\n")
@@ -166,9 +164,9 @@ build_package <- function(
     f = unlink(paste0(pkg_name,".BuildResults/",pkg_name,".Rcheck"), recursive = TRUE, force = TRUE))
 
   ##remove weired files in the src folder
-  .run_module(text = "Remove src/*.o ... ", f = file.remove(list.files("src/", pattern = "\\.o")))
-  .run_module(text = "Remove src/*.so ... ", f = file.remove(list.files("src/", pattern = "\\.so")))
-  .run_module(text = "Remove src/*.rds ... ", f = file.remove(list.files("src/", pattern = "\\.rds")))
+  .run_module(text = "Remove src/*.o ... ", f = file.remove(list.files("src/", pattern = "\\.o", recursive = TRUE, full.names = TRUE)))
+  .run_module(text = "Remove src/*.so ... ", f = file.remove(list.files("src/", pattern = "\\.so", recursive = TRUE, full.names = TRUE)))
+  .run_module(text = "Remove src/*.rds ... ", f = file.remove(list.files("src/", pattern = "\\.rds", recursive = TRUE, full.names = TRUE)))
 
   cat("\n")
   cli::cat_rule("[FINE PACKAGE CHECKING AND BUILDING]")
