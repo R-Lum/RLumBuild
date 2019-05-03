@@ -37,7 +37,12 @@ build_package <- function(
   ##overwrite or create .Rbuildignore
   if(write_Rbuildignore){
     .run_module(text = "Create/overwrite .Rbuildignore with standard ... ",
-                f = file.copy(from = system.file("extdata", "temp_Rbuildignore", package="RLumBuild"), to = ".Rbuildignore", overwrite = TRUE))
+                f = file.copy(
+                  from = system.file("extdata", "temp_Rbuildignore", package="RLumBuild"),
+                  to = ".Rbuildignore", overwrite = TRUE))
+
+    ##add folders that start with the pkg_name
+    cat(paste0("\n # -- Package stuff -- \n\n ^",pkg_name,"\\.$"), file=".Rbuildignore", append = TRUE)
 
   }
 
@@ -127,7 +132,7 @@ build_package <- function(
     clean = TRUE)
 
   ## Revers dependency check --------------------------------------------------------------
-  if(!"module_check_ReverseDependency" %in% exclude){
+  if(!"module_check_ReverseDependencies" %in% exclude){
     cat("\n")
     cli::cat_rule("Reverse dependency check")
     .run_module(text = "Reverse dependency check ... ", module_check_ReverseDependencies(), shut_up = FALSE)

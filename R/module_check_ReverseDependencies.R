@@ -5,8 +5,6 @@
 #'
 #' @author Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (France)
 #'
-#' @note Module currently not acctivated in automated build
-#'
 #' @section Function version: 0.1.0
 #'
 #' @export
@@ -21,11 +19,11 @@ pkg_name <- .get_pkg_name()
 ##do it the old fashion way
 results <-
   tools::check_packages_in_dir(
-    paste0(getwd(), "/", pkg_name, ".BuildResults/"),
-    reverse = list(repos = getOption("repos")["CRAN"],
-                   which = "most"),
+    dir = paste0(getwd(), "/", pkg_name, ".BuildResults/"),
+    reverse = list(
+      repos = getOption("repos")["CRAN"],
+      which = "most"),
     clean = TRUE
-
   )
 
 ##show results
