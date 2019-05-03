@@ -47,7 +47,7 @@ devtools::install_github("R-Lum/RLumBuild@master")
 A packages builds by simply calling 
 
 ```{r, eval=FALSE}
-RLumBuld::build_package()
+RLumBuild::build_package()
 ```
 
 In conjunction with [RStudio](https://www.rstudio.com/products/rstudio/download/) a 
@@ -80,7 +80,7 @@ To prevent that a particular module is called, it can be excluded using the argu
 e.g, the subsequent call prevents the `NEWS.md` file from being created. 
 
 ```{r, eval = FALSE}
-RLumBuld::build_package(exclude = c("module_knit_NEWS"))
+RLumBuild::build_package(exclude = c("module_knit_NEWS"))
 ```
 
 #### `as_cran`
@@ -88,7 +88,7 @@ RLumBuld::build_package(exclude = c("module_knit_NEWS"))
 This argument allows to enable/disable the `--as-cran` check.
 
 ```{r, eval = FALSE}
-RLumBuld::build_package(as_cran = TRUE)
+RLumBuild::build_package(as_cran = TRUE)
 ```
 
 ## License
