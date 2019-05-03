@@ -105,11 +105,14 @@ any later version.
 
 ## Projects using RLumBuild
 
-```{r Outro, echo=FALSE}
-detach("package:RLumBuild")
-```
+* [Luminescence](https://github.com/R-Lum/Luminescence)
 
 ## <span class="glyphicon glyphicon-euro"></span> Funding
 
 In 2019, the work of Sebastian Kreutzer as maintainer of the package was supported
 by LabEx LaScArBxSK (ANR - n. ANR-10-LABX-52).
+
+
+```{r Outro, echo=FALSE}
+detach("package:RLumBuild")
+```
