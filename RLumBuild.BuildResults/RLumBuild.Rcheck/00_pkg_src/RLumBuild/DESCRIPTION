@@ -1,0 +1,24 @@
+Package: RLumBuild
+Type: Package
+Title: RLum Universe Package Building
+Version: 0.1.0.9000-93
+Date: 2019-05-03
+Author: Sebastian Kreutzer [aut, cre] (<https://orcid.org/0000-0002-0734-2199>),
+    Christoph Burow [aut] (<https://orcid.org/0000-0002-5023-4046>)
+Authors@R: c(
+    person("Sebastian", "Kreutzer", role = c("aut", "cre"), email = "sebastian.kreutzer@u-bordeaux-montaigne.fr", comment = c(ORCID = "0000-0002-0734-2199")),
+    person("Christoph", "Burow", role = c("aut"), comment = c(ORCID = "0000-0002-5023-4046")))
+Maintainer: Sebastian Kreutzer <sebastian.kreutzer@u-bordeaux-montaigne.fr>
+Description: Build packages from the RLum-universe. 
+  A collection of tools and scripts to unify the building of packages.
+License: GPL-3
+Depends: R (>= 3.4.0), utils
+Imports: crayon (>= 1.3.4), rmarkdown (>= 1.12), cli (>= 1.1.0),
+        devtools (>= 2.0.2), miniCRAN (>= 0.2.11), stringi (>= 1.4.3),
+        stringr (>= 1.4.0), roxygen2 (>= 6.1.1), Rcpp (>= 1.0.1),
+        R2HTML (>= 2.3.2), pander (>= 0.6.3), xtable (>= 1.8-4)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-05-03 15:30:01 UTC; kreutzer

@@ -18,6 +18,7 @@
 ^\test\*
 ^_pkgdown\.yml$
 ^docs$
+^.*\.sh$
 
 # -- Exclude test suite files --
 ^\.travis\.yml$
@@ -27,6 +28,7 @@
 # -- Exclude GitHub stuff --
 ^LICENSE$
 ^README\.Rmd$
+^README\.html$
 
 # -- Exclude vignettes cache and files --
 ^vignettes/.*cache$
