@@ -71,7 +71,7 @@ Overfull \hbox (5.85643pt too wide) in paragraph at lines 85--86
 é Bor-deaux Mon-taigne (France) 
 [2]
 Overfull \hbox (33.81677pt too wide) in paragraph at lines 144--145
-\T1/ptm/m/n/10 verse Pack-age Build-ingR pack-age ver-sion 0.1.0.9000-93. https
+\T1/ptm/m/n/10 verse Pack-age Build-ingR pack-age ver-sion 0.1.0.9000-94. https
 ://CRAN.R-project.org/package=RLumBuild 
 [3]
 Overfull \hbox (5.85643pt too wide) in paragraph at lines 184--185
@@ -115,7 +115,7 @@ ive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/
 fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
 1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (8 pages, 94489 bytes).
+Output written on Rd2.pdf (8 pages, 94487 bytes).
 Transcript written on Rd2.log.
 This is makeindex, version 2.15 [TeX Live 2018] (kpathsea + Thai support).
 Scanning input file Rd2.idx....done (22 entries accepted, 0 rejected).
@@ -190,7 +190,7 @@ Overfull \hbox (5.85643pt too wide) in paragraph at lines 85--86
 é Bor-deaux Mon-taigne (France) 
 [2]
 Overfull \hbox (33.81677pt too wide) in paragraph at lines 144--145
-\T1/ptm/m/n/10 verse Pack-age Build-ingR pack-age ver-sion 0.1.0.9000-93. https
+\T1/ptm/m/n/10 verse Pack-age Build-ingR pack-age ver-sion 0.1.0.9000-94. https
 ://CRAN.R-project.org/package=RLumBuild 
 [3]
 Overfull \hbox (5.85643pt too wide) in paragraph at lines 184--185
@@ -242,7 +242,7 @@ ve/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/te
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/f
 onts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (9 pages, 105746 bytes).
+Output written on Rd2.pdf (9 pages, 105745 bytes).
 Transcript written on Rd2.log.
 This is makeindex, version 2.15 [TeX Live 2018] (kpathsea + Thai support).
 Scanning input file Rd2.idx....done (22 entries accepted, 0 rejected).
@@ -317,7 +317,7 @@ Overfull \hbox (5.85643pt too wide) in paragraph at lines 85--86
 é Bor-deaux Mon-taigne (France) 
 [2]
 Overfull \hbox (33.81677pt too wide) in paragraph at lines 144--145
-\T1/ptm/m/n/10 verse Pack-age Build-ingR pack-age ver-sion 0.1.0.9000-93. https
+\T1/ptm/m/n/10 verse Pack-age Build-ingR pack-age ver-sion 0.1.0.9000-94. https
 ://CRAN.R-project.org/package=RLumBuild 
 [3]
 Overfull \hbox (5.85643pt too wide) in paragraph at lines 184--185
@@ -368,4 +368,4 @@ Output written on Rd2.pdf (9 pages, 105936 bytes).
 Transcript written on Rd2.log.
 Saving output to â€˜RLumBuild-manual.pdfâ€™ ...
 Done
-You may want to clean up by 'rm -Rf /var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T//RtmpiuZfh7/Rd2pdf4bba5707c0b6'
+You may want to clean up by 'rm -Rf /var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T//Rtmpt694Bt/Rd2pdf532959f32d38'

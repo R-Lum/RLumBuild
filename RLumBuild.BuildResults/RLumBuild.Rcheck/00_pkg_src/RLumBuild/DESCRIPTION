@@ -1,7 +1,7 @@
 Package: RLumBuild
 Type: Package
 Title: RLum Universe Package Building
-Version: 0.1.0.9000-93
+Version: 0.1.0.9000-94
 Date: 2019-05-03
 Author: Sebastian Kreutzer [aut, cre] (<https://orcid.org/0000-0002-0734-2199>),
     Christoph Burow [aut] (<https://orcid.org/0000-0002-5023-4046>)
@@ -21,4 +21,4 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
 NeedsCompilation: no
-Packaged: 2019-05-03 15:30:01 UTC; kreutzer
+Packaged: 2019-05-03 15:35:43 UTC; kreutzer

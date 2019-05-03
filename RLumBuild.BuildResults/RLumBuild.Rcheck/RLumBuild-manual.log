@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.7.20)  3 MAY 2019 17:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.7.20)  3 MAY 2019 17:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -501,7 +501,7 @@ LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
 (Font)              scaled to size 9.0pt on input line 89.
 [2]
 Overfull \hbox (33.81677pt too wide) in paragraph at lines 144--145
-\T1/ptm/m/n/10 verse Pack-age Build-ingR pack-age ver-sion 0.1.0.9000-93. https
+\T1/ptm/m/n/10 verse Pack-age Build-ingR pack-age ver-sion 0.1.0.9000-94. https
 ://CRAN.R-project.org/package=RLumBuild 
  []
 

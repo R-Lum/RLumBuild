@@ -63,13 +63,13 @@ This script is stored in the package directory and connected with *RStudio* via
 The function itself does not require arguments to run, however, it has arguments that 
 can be used to control the build process:  
 
-### `  write_Rbuildignore`
+#### `  write_Rbuildignore`
 
 If set to `TRUE` (the default) every `.Ruildignore` is overwritten by a template shipped
 with the package. Please note that this file is highly customised to serve package building 
 in the RLum-universe.
 
-### `exclude`
+#### `exclude`
 
 The package is mainly organised in modules (basically single, documented package functions
 staring with `modul_`). Every module serves a different process and is not essential 
@@ -81,7 +81,7 @@ e.g, the subsequent call prevents the `NEWS.md` file from being created.
 RLumBuld::build_package(exclude = c("module_knit_NEWS"))
 ```
 
-### `as_cran`
+#### `as_cran`
 
 This argument allows to enable/disable the `--as-cran` check.
 
