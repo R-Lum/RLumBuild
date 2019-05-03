@@ -7,6 +7,10 @@
 
 # News for package ‘RLumBuild’
 
-## Changes in version 0.1.0 (2019-05-04)
+## Changes in version 0.1.1.9000-1 (2019-05-04)
+
+  - Nothing so far
+
+## Changes in version 0.1.0 (2019-05-03)
 
   - Initial version

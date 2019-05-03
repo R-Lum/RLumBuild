@@ -10,6 +10,10 @@ header-includes:
 
 ## Changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
 
+* Nothing so far
+
+## Changes in version 0.1.0 (2019-05-03)
+
 * Initial version
 
 
