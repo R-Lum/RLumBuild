@@ -17,6 +17,9 @@ release](https://img.shields.io/github/release/RLum/RLumBuild.svg)
 ![GitHub Release
 Date](https://img.shields.io/github/release-date/RLum/RLumBuild.svg)
 
+[![Build
+Status](https://travis-ci.org/R-Lum/RLumBuild.svg?branch=master)](https://travis-ci.org/R-Lum/RLumBuild)
+
 Over the years our RLum-package universe expanded. At the same time
 building and maintaining the various packages became more and more
 complex. While at the beginning we used tools, such as the `'devtools'`
