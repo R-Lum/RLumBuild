@@ -51,7 +51,7 @@ RLumBuld::build_package()
 ```
 
 In conjunction with [RStudio](https://www.rstudio.com/products/rstudio/download/) a 
-short bash script allowing a full integration is more usefull. 
+short bash script allowing a full integration is more useful. 
 
 ```{}
 #!/bin/bash
@@ -75,7 +75,7 @@ in the RLum-universe.
 
 The package is mainly organised in modules (basically single, documented package functions
 staring with `modul_`). Every module serves a different process and is not essential 
-to build the package but provide some additinal features (e.g., automated version numbering). 
+to build the package but provide some additional features (e.g., automated version numbering). 
 To prevent that a particular module is called, it can be excluded using the argument `exclude`, 
 e.g, the subsequent call prevents the `NEWS.md` file from being created. 
 
