@@ -36,7 +36,8 @@ build_package <- function(
   pkg_name <- .get_pkg_name()
 
   # Retrive information -------------------------------------------------------------------------
-  cli::cat_rule("Retrieve package information")
+  cli::cat_rule("Environmental information")
+  cat(crayon::blue(cli::symbol$arrow_right, "Using 'RLumBuild' version:", packageVersion("RLumBuild"), "\n"),sep = "")
   cat(crayon::blue(cli::symbol$arrow_right, "Working directory: ", getwd(), "\n"),sep = "")
   cat(crayon::blue(cli::symbol$arrow_right, "Package name: ", pkg_name,"\n\n"), sep = "")
 

@@ -4,11 +4,20 @@
 \alias{module_register_EntryPoints}
 \title{Module: set_VersionNumber}
 \usage{
-module_register_EntryPoints(pkg_name)
-}
-\arguments{
-\item{pkg_name}{\link{character} the name of the package}
+module_register_EntryPoints()
 }
 \description{
-Module: set_VersionNumber
+Register C/C++ entry points as required by CRAN
 }
+\section{Function version}{
+ 0.1.0
+}
+
+\author{
+Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (France)
+} 
+
+\section{How to cite}{
+Kreutzer, S. (2019). module_register_EntryPoints(): Module: set_VersionNumber. Function version 0.1.0. In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR package version 0.1.0.9000-108. https://CRAN.R-project.org/package=RLumBuild
+}
+

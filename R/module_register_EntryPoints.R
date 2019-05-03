@@ -1,10 +1,18 @@
 #' Module: set_VersionNumber
 #'
-#' @param pkg_name [character] the name of the package
+#' @description Register C/C++ entry points as required by CRAN
+#'
+#' @author Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (France)
+#'
+#' @section Function version: 0.1.0
 #'
 #' @md
 #' @export
-module_register_EntryPoints<- function(pkg_name) {
+module_register_EntryPoints<- function() {
+
+  ##get pkg_name
+  pkg_name <- .get_pkg_name()
+
   ##run registration
   init <- utils::capture.output(tools::package_native_routine_registration_skeleton(".", character_only = FALSE))
 
@@ -14,8 +22,9 @@ module_register_EntryPoints<- function(pkg_name) {
     "/* DO NOT CHANGE MANUALLY! */",
     "/* This file was produced by RLumBuild::.module_register_EntryPoints< */")
 
+
   ##write file
-  write(x = c(header, init), file = "src/", pkg_name, "_init.c")
+  write(x = c(header, init), file = paste0("src/", pkg_name, "_init.c"))
   }else{
     invisible(NULL)
 

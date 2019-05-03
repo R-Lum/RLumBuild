@@ -7,5 +7,17 @@
 module_build_documentation()
 }
 \description{
-Module: Build Documentation
+Create documentation using roxygen2
 }
+\section{Function version}{
+ 0.1.0
+}
+
+\author{
+Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (France)
+} 
+
+\section{How to cite}{
+Kreutzer, S. (2019). module_build_documentation(): Module: Build Documentation. Function version 0.1.0. In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR package version 0.1.0.9000-108. https://CRAN.R-project.org/package=RLumBuild
+}
+
