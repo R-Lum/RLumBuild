@@ -118,6 +118,7 @@ more details.
 ## Projects using RLumBuild
 
   - [Luminescence](https://github.com/R-Lum/Luminescence)
+  - [RCarb](https://github.com/R-Lum/RCarb)
 
 ## <span class="glyphicon glyphicon-euro"></span> Funding
 

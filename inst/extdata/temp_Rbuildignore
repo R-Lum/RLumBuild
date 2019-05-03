@@ -30,6 +30,7 @@
 ^LICENSE$
 ^README\.Rmd$
 ^README\.html$
+^\.github$
 
 # -- Exclude vignettes cache and files --
 ^vignettes/.*cache$
