@@ -117,9 +117,10 @@ more details.
 
 ## Projects using RLumBuild
 
-  - \[BayLum\]((<https://github.com/R-Lum/BayLum>)
+  - [BayLum](https://github.com/R-Lum/BayLum)
   - [Luminescence](https://github.com/R-Lum/Luminescence)
   - [RCarb](https://github.com/R-Lum/RCarb)
+  - [RLumModel](https://github.com/R-Lum/RLumModel)
   - [rxylib](https://github.com/R-Lum/rxylib)
 
 ## <span class="glyphicon glyphicon-euro"></span> Funding
