@@ -122,7 +122,10 @@ NULL
 #'@md
 #'@export
 .get_pkg_name <- function(){
-  strsplit(x = readLines("DESCRIPTION", n = 1), split = "Package: ", fixed = TRUE)[[1]][2]
+  if(!file.exists("DESCRIPTION"))
+    stop("[.get_pkg_name()] It does not look like a package. I could not find a DESCRIPTION!", call. = FALSE)
+
+  strsplit(x = readLines("DESCRIPTION", n = 1, warn = FALSE), split = "Package: ", fixed = TRUE)[[1]][2]
 
 }
 
@@ -132,7 +135,7 @@ NULL
 #'@md
 #'@export
 .get_pkg_version <- function(){
-   temp <- readLines("DESCRIPTION", n = 10)
+   temp <- readLines("DESCRIPTION", n = 10, warn = FALSE)
    strsplit(x = temp[grepl(pattern = "Version: ", x = temp, fixed = TRUE)], split = "Version: ", fixed = TRUE)[[1]][2]
 
 }
