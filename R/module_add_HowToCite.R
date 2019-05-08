@@ -1,11 +1,19 @@
 #' @title Add How to Cite Section
 #'
-#' @description Adds a section 'How to Cite' to each manual page as long as
-#' author names and version numbers are given
+#' @description Adds a function tailored section 'How to Cite' to each manual page as long as
+#' author names and a section 'Function version' exists.
+#'
+#' @details
+#'
+#' **Output example**
+#'
+#' Burow, C., Kreutzer, S. (2019). module_add_HowToCite(): Add How to Cite Section. Function version 0.1.0.
+#' In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR
+#' package version 0.1.1.9000-5. https://CRAN.R-project.org/package=RLumBuild
 #'
 #' @section Function version: 0.1.0
 #'
-#' @author Christoph Burow, Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (Frange)
+#' @author Christoph Burow (Germany), Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (Frange)
 #'
 #' @md
 #' @export
@@ -23,6 +31,15 @@ module_add_HowToCite <- function(){
 
   DESC_VERSION <- unlist(
     strsplit(x = DESC[grepl(pattern = "Version:", x = DESC, fixed = TRUE)], split = "Version: ", fixed = TRUE))[2]
+
+  ##set URL
+  if(attr(curlGetHeaders(paste0("https://CRAN.R-project.org/package=", DESC_PACKAGE)), "status") == "404"){
+    URL <- ""
+
+  }else{
+    URL <- paste0("https://CRAN.R-project.org/package=", DESC_PACKAGE)
+
+  }
 
 
   authors <- DESC[grep("author", DESC, ignore.case = TRUE)[1]:
@@ -79,7 +96,7 @@ module_add_HowToCite <- function(){
   pkg.citation <- paste0(pkg.authors, " (", format(Sys.time(), "%Y"), "). ",
                          paste0(DESC_PACKAGE, ": ",DESC_TITLE),
                          paste0("R package version ", DESC_VERSION, ". "),
-                         paste0("https://CRAN.R-project.org/package=",DESC_PACKAGE))
+                         URL)
 
 
   for (i in 1:length(file.list.man)) {
