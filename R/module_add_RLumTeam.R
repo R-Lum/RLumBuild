@@ -33,7 +33,7 @@ module_add_RLumTeam <- function() {
       author.end <- min(temp_id[temp_id > author.start])
 
       ##replace this entry
-      temp.file.man[author.end] <- "\\cr RLum Developer Team}"
+      temp.file.man[author.end] <- ", RLum Developer Team}"
 
     }
 
