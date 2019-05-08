@@ -1,7 +1,8 @@
 #' Create Package BibTeX file
 #'
-#' @author Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (France)
+#' @description A BibTeX file to be used to cite the package is automatically created.
 #'
+#' @author Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (France)
 #'
 #' @section Function version: 0.1.0
 #'

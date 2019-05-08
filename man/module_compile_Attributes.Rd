@@ -7,5 +7,17 @@
 module_compile_Attributes()
 }
 \description{
-Module: Compile attributes
+Compile C++ attributes if such code is part of the package
 }
+\section{Function version}{
+ 0.1.0
+}
+
+\author{
+Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (France)
+, RLum Developer Team} 
+
+\section{How to cite}{
+Kreutzer, S. (2019). module_compile_Attributes(): Module: Compile attributes. Function version 0.1.0. In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR package version 0.1.1.9000-13. https://github.com/R-Lum/RLumBuild
+}
+

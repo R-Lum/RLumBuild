@@ -7,18 +7,25 @@
 module_add_HowToCite()
 }
 \description{
-Adds a section 'How to Cite' to each manual page as long as
-author names and version numbers are given
+Adds a function tailored section 'How to Cite' to each manual page as long as
+author names and a section 'Function version' exists.
+}
+\details{
+\strong{Output example}
+
+Burow, C., Kreutzer, S. (2019). module_add_HowToCite(): Add How to Cite Section. Function version 0.1.0.
+In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR
+package version 0.1.1.9000-5. https://github.com/R-Lum/RLumBuild
 }
 \section{Function version}{
- 0.1.0
+ 0.2.0
 }
 
 \author{
-Christoph Burow, Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (Frange)
-} 
+Christoph Burow (Germany), Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (Frange)
+, RLum Developer Team} 
 
 \section{How to cite}{
-Burow, C., Kreutzer, S. (2019). module_add_HowToCite(): Add How to Cite Section. Function version 0.1.0. In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR package version 0.1.1.9000-5. https://CRAN.R-project.org/package=RLumBuild
+Burow, C., Kreutzer, S. (2019). module_add_HowToCite(): Add How to Cite Section. Function version 0.2.0. In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR package version 0.1.1.9000-13. https://github.com/R-Lum/RLumBuild
 }
 

@@ -14,6 +14,14 @@ header-includes:
 created, this allows customised scripts in the RMD-files and the version number
 is always consistent with the number from the build.
 
+* Update and complete documentation
+
+* `module_add_HowToCite()` now checks the URL field in the DESCRIPTION file and double
+checks this URL
+
+* `module_add_RLumTeam()` was never working and activated; now ok.
+
+
 ## Changes in version 0.1.0 (2019-05-03)
 
 * Initial version

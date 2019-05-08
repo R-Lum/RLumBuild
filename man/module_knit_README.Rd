@@ -7,5 +7,17 @@
 module_knit_README()
 }
 \description{
-Module: Knit README
+Create README.md from README.Rmd
 }
+\section{Function version}{
+ 0.1.0
+}
+
+\author{
+Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (France)
+, RLum Developer Team} 
+
+\section{How to cite}{
+Kreutzer, S. (2019). module_knit_README(): Module: Knit README. Function version 0.1.0. In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR package version 0.1.1.9000-13. https://github.com/R-Lum/RLumBuild
+}
+

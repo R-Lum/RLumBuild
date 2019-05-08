@@ -7,11 +7,18 @@
 
 # News for package ‘RLumBuild’
 
-## Changes in version 0.1.1.9000-5 (2019-05-08)
+## Changes in version 0.1.1.9000-13 (2019-05-08)
 
   - Add build order: NEWS and README are created after the documentation
     was created, this allows customised scripts in the RMD-files and the
     version number is always consistent with the number from the build.
+
+  - Update and complete documentation
+
+  - `module_add_HowToCite()` now checks the URL field in the DESCRIPTION
+    file and double checks this URL
+
+  - `module_add_RLumTeam()` was never working and activated; now ok.
 
 ## Changes in version 0.1.0 (2019-05-03)
 
