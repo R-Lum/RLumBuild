@@ -18,6 +18,6 @@ Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaign
 , RLum Developer Team} 
 
 \section{How to cite}{
-Kreutzer, S. (2019). module_check_ReverseDependencies(): Check Reverse Dependencies. Function version 0.1.0. In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR package version 0.1.1. https://github.com/R-Lum/RLumBuild
+Kreutzer, S. (2019). module_check_ReverseDependencies(): Check Reverse Dependencies. Function version 0.1.0. In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR package version 0.1.2.9000-2. https://github.com/R-Lum/RLumBuild
 }
 

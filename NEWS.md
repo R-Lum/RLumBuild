@@ -7,6 +7,10 @@
 
 # News for package ‘RLumBuild’
 
+## hanges in version 0.1.2.9000-2 (2019-05-08)
+
+  - Dummy
+
 ## Changes in version 0.1.1 (2019-05-08)
 
   - Add build order: NEWS and README are created after the documentation
