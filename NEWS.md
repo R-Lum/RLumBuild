@@ -7,7 +7,7 @@
 
 # News for package ‘RLumBuild’
 
-## Changes in version 0.1.1.9000-13 (2019-05-08)
+## Changes in version 0.1.1 (2019-05-08)
 
   - Add build order: NEWS and README are created after the documentation
     was created, this allows customised scripts in the RMD-files and the
