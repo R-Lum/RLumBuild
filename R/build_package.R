@@ -1,5 +1,7 @@
 #' @title Check and Build Package
 #'
+#' @description Central function to run the package build process.
+#'
 #' @param path [character] (with default): set package path
 #'
 #' @param exclude [character] (optional): names of build modules you want to exclude]
@@ -99,7 +101,6 @@ build_package <- function(
   ##>> Add RLum Team
   if(!"module_add_RLumTeam" %in% exclude)
     .run_module(text = "Add RLum Developer Team ...", f = module_add_RLumTeam())
-
 
   ##>> Add How to Cite
   if(!"module_add_HowToCite" %in% exclude)
