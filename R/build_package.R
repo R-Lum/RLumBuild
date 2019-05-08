@@ -84,14 +84,6 @@ build_package <- function(
   cat("\n")
   cli::cat_rule("Pre-build modules")
 
-  ##>> Knit NEWS
-  if(!"module_knit_NEWS" %in% exclude)
-    .run_module(text = "Create NEWS.md file ...", f = module_knit_NEWS())
-
-  ##>> Knit README
-  if(!"module_knit_README" %in% exclude)
-    .run_module(text = "Create README.md file ...", f = module_knit_README())
-
   ##>> Attributes
   if(!"module_compile_Attributes" %in% exclude)
     .run_module(text = "Compile C/C++ attributes ...",f = module_compile_Attributes())
@@ -107,6 +99,14 @@ build_package <- function(
   ##>> Add RLum-Team
   if(!"module_add_HowToCite" %in% exclude)
     .run_module(text = "Add 'How to cite' section in manual ...", f = module_add_HowToCite())
+
+  ##>> Knit NEWS
+  if(!"module_knit_NEWS" %in% exclude)
+    .run_module(text = "Create NEWS.md file ...", f = module_knit_NEWS())
+
+  ##>> Knit README
+  if(!"module_knit_README" %in% exclude)
+    .run_module(text = "Create README.md file ...", f = module_knit_README())
 
   # # Build source package ------------------------------------------------------------------------
   cat("\n")

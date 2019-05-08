@@ -10,7 +10,9 @@ header-includes:
 
 ## Changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
 
-* Nothing so far
+* Add build order: NEWS and README are created after the documentation was 
+created, this allows customised scripts in the RMD-files and the version number
+is always consistent with the number from the build.
 
 ## Changes in version 0.1.0 (2019-05-03)
 
