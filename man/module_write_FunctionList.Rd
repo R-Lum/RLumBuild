@@ -32,6 +32,6 @@ Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaign
 } 
 
 \section{How to cite}{
-Burow, C., Kreutzer, S. (2019). module_write_FunctionList(): Write Function Argument List. Function version 0.1.0. In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR package version 0.1.1.9000-3. https://CRAN.R-project.org/package=RLumBuild
+Burow, C., Kreutzer, S. (2019). module_write_FunctionList(): Write Function Argument List. Function version 0.1.0. In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR package version 0.1.1.9000-5. https://CRAN.R-project.org/package=RLumBuild
 }
 
