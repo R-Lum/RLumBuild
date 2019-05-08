@@ -1,5 +1,21 @@
 #' Module: set_VersionNumber
 #'
+#' @description Automatically set version number in DESCRIPTION file if the pattern '.9000' is found.
+#'
+#' @details If the package is under development it is somehow meaningful to easily distinguish
+#' between different build versions. In the R community the pattern `.9000` in a version number is
+#' used to declare a package under development. If such pattern is found, the module
+#' either adds `-1` or if already their, increase such number by `1` every time the package
+#' is built.
+#'
+#' For release versions the patter `.9000` is removed from the DESCRIPTION file and nothing
+#' is done if the module is run.
+#'
+#' @author Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (France)
+#'
+#' @section Function version: 0.1.0
+#'
+#'
 #' @export
 module_set_VersionNumber<- function() {
 
