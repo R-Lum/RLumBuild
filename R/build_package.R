@@ -96,7 +96,12 @@ build_package <- function(
   if(!"module_set_VersionNumber" %in% exclude)
     .run_module(text = "Update DESCRIPTION: date and version number ...", f = module_set_VersionNumber())
 
-  ##>> Add RLum-Team
+  ##>> Add RLum Team
+  if(!"module_add_RLumTeam" %in% exclude)
+    .run_module(text = "Add RLum Developer Team ...", f = module_add_RLumTeam())
+
+
+  ##>> Add How to Cite
   if(!"module_add_HowToCite" %in% exclude)
     .run_module(text = "Add 'How to cite' section in manual ...", f = module_add_HowToCite())
 
