@@ -12,6 +12,8 @@ Maintainer: Sebastian Kreutzer <sebastian.kreutzer@u-bordeaux-montaigne.fr>
 Description: Build packages from the RLum-universe. 
   A collection of tools and scripts to unify the building of packages.
 License: GPL-3
+BugReports: https://github.com/R-Lum/RLumBuild/issues
+URL: https://github.com/R-Lum/RLumBuild
 Depends:
     R (>= 3.4.0), 
     utils
