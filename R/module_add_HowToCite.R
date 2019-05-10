@@ -217,7 +217,7 @@ module_add_HowToCite <- function(){
           write(temp.file.man, paste0("man/", file.list.man[i]))
 
           ##write BibTeX file
-          bib_file <- paste0(DESC_PACKAGE,".BuildResults/", DESC_PACKAGE,"_",DESC_VERSION,"-bibliography.bib")
+          bib_file <- paste0(DESC_PACKAGE,".BuildResults/", DESC_PACKAGE,"_",DESC_VERSION,"-fun_bibliography.bib")
 
           ##check if exsits or not
           if(!file.exists(bib_file))
