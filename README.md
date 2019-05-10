@@ -8,8 +8,7 @@
 # RLumBuild <img width=120px src="man/figures/RLumBuild-logo.svg" align="right" />
 
 **Build packages from the RLum-universe. A collection of tools and
-scripts to unify the building of
-packages.**
+scripts to unify the building of packages.**
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 ![GitHub

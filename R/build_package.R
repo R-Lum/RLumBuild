@@ -12,6 +12,9 @@
 #'
 #' @author Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (France)
 #'
+#'
+#' @section Function version: 0.1.0
+#'
 #' @examples
 #'
 #' print("This is only to silence the CRAN check")

@@ -11,7 +11,7 @@
 #' In: Kreutzer, S., Burow, C. (2019). RLumBuild: RLum Universe Package BuildingR
 #' package version 0.1.1.9000-5. https://github.com/R-Lum/RLumBuild
 #'
-#' @section Function version: 0.2.0
+#' @section Function version: 0.3.0
 #'
 #' @author Christoph Burow (Germany), Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (Frange)
 #'
@@ -199,7 +199,7 @@ module_add_HowToCite <- function(){
           paste(temp.file.man[reference.start - 1],
                 citation.text)
 
-        ##BibTeX entry
+        ##generate R bibentry
         bib_entry <- utils::bibentry(
           bibtype = "InCollection",
           title = paste0(fun, "(): ", title),
@@ -208,8 +208,8 @@ module_add_HowToCite <- function(){
                         x = gsub(pattern = ".,", replacement = " and", x =fun.authors, fixed = TRUE),
                         useBytes = TRUE),
           booktitle = trimws(sub(pattern = DESC_URL, replacement = "", x = pkg.citation, fixed = TRUE)),
+          publisher = DESC_PACKAGE,
           year = format(Sys.time(), "%Y"),
-          publisher = "CRAN",
           url = DESC_URL)
 
         ##write file back to the disc and append BibTeX file
@@ -230,7 +230,6 @@ module_add_HowToCite <- function(){
       }
     }
   }
-
 
   return(TRUE)
 }
