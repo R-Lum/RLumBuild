@@ -7,13 +7,15 @@
 
 # News for package ‘RLumBuild’
 
-## hanges in version 0.1.2.9000-13 (2019-05-10)
+## hanges in version 0.1.2.9000-18 (2019-05-10)
 
 ### `module_add_HowToCite()`
 
   - Silence warnings by removing the cause
   - Function now creates and addiational BIB-file with all the function
     citations in it
+  - If now patter `URL` was set in the DESCRIPTION file this module did
+    not work
 
 ## Changes in version 0.1.1 (2019-05-08)
 
