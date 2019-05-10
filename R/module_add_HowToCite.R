@@ -32,14 +32,10 @@ module_add_HowToCite <- function(){
   DESC_VERSION <- unlist(
     strsplit(x = DESC[grepl(pattern = "Version:", x = DESC, fixed = TRUE)], split = "Version: ", fixed = TRUE))[2]
 
-  DESC_URL <- try(expr = unlist(
-    strsplit(x = DESC[grepl(pattern = "URL:", x = DESC, fixed = TRUE)], split = "URL: ", fixed = TRUE))[2],
-    silent = TRUE)
+  DESC_URL <- unlist(
+    strsplit(x = DESC[grepl(pattern = "URL:", x = DESC, fixed = TRUE)], split = "URL: ", fixed = TRUE))[2]
 
-    if(class(DESC_URL) == 'try-error')
-      DESC_URL <- NULL
-
-  ##test URL
+  ##test URL and account for NULL case
   if(!is.null(DESC_URL)){
     if(attr(curlGetHeaders(DESC_URL), "status") == "404")
       DESC_URL <- NULL
@@ -101,7 +97,6 @@ module_add_HowToCite <- function(){
                          paste0(DESC_PACKAGE, ": ",DESC_TITLE),
                          paste0("R package version ", DESC_VERSION, ". "),
                          DESC_URL)
-
 
   for (i in 1:length(file.list.man)) {
     temp.file.man <-  readLines(paste0("man/", file.list.man[i]), warn = FALSE)
@@ -211,7 +206,11 @@ module_add_HowToCite <- function(){
           author = gsub(pattern = "[.,]", replacement = "",
                         x = gsub(pattern = ".,", replacement = " and", x =fun.authors, fixed = TRUE),
                         useBytes = TRUE),
-          booktitle = trimws(sub(pattern = DESC_URL, replacement = "", x = pkg.citation, fixed = TRUE)),
+          booktitle = if(is.null(DESC_URL)){
+             pkg.citation
+            }else{
+              trimws(sub(pattern = DESC_URL, replacement = "", x = pkg.citation, fixed = TRUE))
+             },
           publisher = DESC_PACKAGE,
           year = format(Sys.time(), "%Y"),
           url = DESC_URL)
