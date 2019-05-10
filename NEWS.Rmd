@@ -14,6 +14,7 @@ header-includes:
 
 * Silence warnings by removing the cause
 * Function now creates and addiational BIB-file with all the function citations in it
+* If now patter `URL` was set in the DESCRIPTION file this module did not work
 
 ## Changes in version 0.1.1 (2019-05-08)
 

@@ -32,8 +32,12 @@ module_add_HowToCite <- function(){
   DESC_VERSION <- unlist(
     strsplit(x = DESC[grepl(pattern = "Version:", x = DESC, fixed = TRUE)], split = "Version: ", fixed = TRUE))[2]
 
-  DESC_URL <- unlist(
-    strsplit(x = DESC[grepl(pattern = "URL:", x = DESC, fixed = TRUE)], split = "URL: ", fixed = TRUE))[2]
+  DESC_URL <- try(expr = unlist(
+    strsplit(x = DESC[grepl(pattern = "URL:", x = DESC, fixed = TRUE)], split = "URL: ", fixed = TRUE))[2],
+    silent = TRUE)
+
+    if(class(DESC_URL) == 'try-error')
+      DESC_URL <- NULL
 
   ##test URL
   if(!is.null(DESC_URL)){
