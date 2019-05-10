@@ -45,7 +45,7 @@ module_add_HowToCite <- function(){
   authors <- DESC[grep("author", DESC, ignore.case = TRUE)[1]:
                   c(grep("author", DESC, ignore.case = TRUE)[2] - 1)]
 
-  ##remove [ths]
+  ##remove [ths] ... means authors which have [ths] only
   if(any(grepl(authors, pattern = "[ths]", fixed = TRUE)))
     authors <- authors[-grep(authors, pattern = "[ths]", fixed = TRUE)]
 
@@ -81,7 +81,7 @@ module_add_HowToCite <- function(){
   ## -------------------------------------------------------------------------- ##
 
   ##add citation section
-  file.list.man <- list.files("man/", recursive = TRUE, include.dirs = FALSE)
+  file.list.man <- list.files("man/", recursive = TRUE, include.dirs = FALSE, pattern = "\\.Rd")
 
   # build package citation
   pkg.authors <- character()
@@ -100,7 +100,7 @@ module_add_HowToCite <- function(){
 
 
   for (i in 1:length(file.list.man)) {
-    temp.file.man <-  readLines(paste0("man/", file.list.man[i]))
+    temp.file.man <-  readLines(paste0("man/", file.list.man[i]), warn = FALSE)
 
     # determine function and title
     fun <-
