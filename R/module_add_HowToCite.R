@@ -93,7 +93,7 @@ module_add_HowToCite <- function(){
                             author.list.authorsOnly$name[i],
                             ifelse(i == nrow(author.list.authorsOnly),"", ", "))
   }
-  pkg.citation <- paste0(pkg.authors, " (", format(Sys.time(), "%Y"), "). ",
+  pkg.citation <- paste0(pkg.authors, ", ", format(Sys.time(), "%Y"), ". ",
                          paste0(DESC_PACKAGE, ": ",DESC_TITLE),
                          paste0("R package version ", DESC_VERSION, ". "),
                          DESC_URL)
@@ -178,13 +178,13 @@ module_add_HowToCite <- function(){
           fun.version <- ""
         }
 
-
+        ##assemble citation text
         citation.text <- paste0(
           "\n\n\\section{How to cite}{\n",
           fun.authors,
-          " (",
+          ", ",
           format(Sys.time(), "%Y"),
-          "). ",
+          ". ",
           fun,
           "(): ",
           title,
@@ -199,13 +199,38 @@ module_add_HowToCite <- function(){
           paste(temp.file.man[reference.start - 1],
                 citation.text)
 
-        ##write file back to the disc
-        if (length(author.start) > 0) {
+        ##BibTeX entry
+        bib_entry <- utils::bibentry(
+          bibtype = "InCollection",
+          title = paste0(fun, "(): ", title),
+          volume = paste0("version: ", fun.version),
+          author = gsub(pattern = "[.,]", replacement = "",
+                        x = gsub(pattern = ".,", replacement = " and", x =fun.authors, fixed = TRUE),
+                        useBytes = TRUE),
+          booktitle = trimws(sub(pattern = DESC_URL, replacement = "", x = pkg.citation, fixed = TRUE)),
+          year = format(Sys.time(), "%Y"),
+          publisher = "CRAN",
+          url = DESC_URL)
+
+        ##write file back to the disc and append BibTeX file
+        if (length(author.start) > 0){
           write(temp.file.man, paste0("man/", file.list.man[i]))
+
+          ##write BibTeX file
+          bib_file <- paste0(DESC_PACKAGE,".BuildResults/", DESC_PACKAGE,"_",DESC_VERSION,"-bibliography.bib")
+
+          ##check if exsits or not
+          if(!file.exists(bib_file))
+            write(x = character(), file = bib_file)
+
+          ##write to disc
+          write(x = toBibtex(bib_entry), file = bib_file, append = TRUE)
+
         }
       }
     }
   }
+
 
   return(TRUE)
 }
