@@ -7,7 +7,7 @@
 
 # News for package ‘RLumBuild’
 
-## hanges in version 0.1.2 (2019-07-30)
+## hanges in version 0.1.3.9000-1 (2019-07-30)
 
 ### `module_add_HowToCite()`
 
