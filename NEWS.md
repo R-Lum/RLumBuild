@@ -7,7 +7,12 @@
 
 # News for package ‘RLumBuild’
 
-## hanges in version 0.1.3.9000-1 (2019-07-30)
+## changes in version 0.1.3.9000-3 (2019-07-31)
+
+  - Remote checks were not activated by default if `as-cran` was
+    checked, this led to less rigour tests.
+
+## Changes in version 0.1.2 (2019-07-30)
 
 ### `module_add_HowToCite()`
 

@@ -8,7 +8,12 @@ header-includes:
 
 # News for package 'RLumBuild'
 
-## hanges in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
+## changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
+
+* Remote checks were not activated by default if `as-cran` was `TRUE`, this 
+led to less rigour tests. 
+
+## Changes in version 0.1.2 (2019-07-30)
 
 ### `module_add_HowToCite()`
 
