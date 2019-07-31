@@ -7,7 +7,9 @@
 
 # News for package ‘RLumBuild’
 
-## Changes in version 0.1.3.9000-4 (2019-07-31)
+## Changes in version 0.1.4.9000-1 (2019-07-31)
+
+## Changes in version 0.1.3 (2019-07-31)
 
   - Remote checks were not activated by default if `as-cran` was `TRUE`,
     this led to less rigour tests.
