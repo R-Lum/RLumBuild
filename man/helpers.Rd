@@ -45,7 +45,7 @@ Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaign
 , RLum Developer Team} 
 
 \section{How to cite}{
-Kreutzer, S., 2019. helpers(): RLumBuild Helper Functions. In: Kreutzer, S., Burow, C., 2019. RLumBuild: RLum Universe Package BuildingR package version 0.1.3.9000-3. https://github.com/R-Lum/RLumBuild
+Kreutzer, S., 2019. helpers(): RLumBuild Helper Functions. In: Kreutzer, S., Burow, C., 2019. RLumBuild: RLum Universe Package BuildingR package version 0.1.3.9000-4. https://github.com/R-Lum/RLumBuild
 }
 
 \keyword{internal}

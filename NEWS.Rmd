@@ -8,7 +8,7 @@ header-includes:
 
 # News for package 'RLumBuild'
 
-## changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
+## Changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
 
 * Remote checks were not activated by default if `as-cran` was `TRUE`, this 
 led to less rigour tests. 
