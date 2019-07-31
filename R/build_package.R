@@ -128,6 +128,7 @@ build_package <- function(
     path = list.files(paste0(pkg_name,".BuildResults"), pattern = ".tar.gz", full.names = TRUE, ),
     cran = as_cran,
     incoming = as_cran,
+    remote = as_cran,
     force_suggests = TRUE,
     check_dir = paste0(pkg_name,".BuildResults")))
 
