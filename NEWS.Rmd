@@ -10,6 +10,8 @@ header-includes:
 
 ## Changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
 
+* Add support for code meta data: https://ropensci.github.io/codemetar
+* Swap order: install now comes after the outro
 
 ## Changes in version 0.1.3 (2019-07-31)
 

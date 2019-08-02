@@ -7,7 +7,11 @@
 
 # News for package ‘RLumBuild’
 
-## Changes in version 0.1.4.9000-1 (2019-07-31)
+## Changes in version 0.1.4.9000-10 (2019-08-02)
+
+  - Add support for code meta data:
+    <https://ropensci.github.io/codemetar>
+  - Swap order: install now comes after the outro
 
 ## Changes in version 0.1.3 (2019-07-31)
 
