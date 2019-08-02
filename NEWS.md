@@ -7,8 +7,10 @@
 
 # News for package ‘RLumBuild’
 
-## Changes in version 0.1.4.9000-13 (2019-08-02)
+## Changes in version 0.1.4.9000-18 (2019-08-02)
 
+  - Add new module to automatically update `data/datalist` if data are
+    shipped with the package
   - Add support for code meta data:
     <https://ropensci.github.io/codemetar>
   - Swap order: install now comes after the outro
