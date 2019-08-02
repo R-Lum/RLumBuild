@@ -10,7 +10,7 @@
 #'
 #' @export
 module_write_codemetar <- function(){
-  codemetar::write_codemeta(verbose = FALSE)
+  codemetar::write_codemeta(verbose = FALSE, use_filesize = FALSE)
 
 return(TRUE)
 
