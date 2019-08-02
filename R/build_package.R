@@ -154,8 +154,8 @@ build_package <- function(
   if(!"module_module_write_FunctionList" %in% exclude)
     .run_module(text = "Write function argument table (*.csv) ...", f = module_write_FunctionList())
 
- # if(!"module_write_codemetar" %in% exclude)
- #    .run_module(text = "Create codemeta ...", f = module_write_codemetar())
+  # if(!"module_write_codemetar" %in% exclude)
+  #    .run_module(text = "Create codemeta ...", f = module_write_codemetar())
 
 
   # Install -------------------------------------------------------------------------------

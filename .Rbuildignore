@@ -44,4 +44,3 @@
 
 # -- Package 'RLumBuild' stuff -- 
 ^RLumBuild\..*$
-^codemeta\.json$

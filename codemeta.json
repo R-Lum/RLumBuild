@@ -14,7 +14,7 @@
   ],
   "issueTracker": "https://github.com/R-Lum/RLumBuild/issues",
   "license": "https://spdx.org/licenses/GPL-3.0",
-  "version": "0.1.4.9000.10",
+  "version": "0.1.4.9000.12",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -269,5 +269,5 @@
   "readme": "https://github.com/R-Lum/RLumBuild/blob/master/README.md",
   "contIntegration": "https://travis-ci.org/R-Lum/RLumBuild",
   "developmentStatus": "https://www.tidyverse.org/lifecycle/#experimental",
-  "fileSize": "88.022KB"
+  "fileSize": "88.037KB"
 }
