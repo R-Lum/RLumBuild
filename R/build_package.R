@@ -141,16 +141,6 @@ build_package <- function(
   # # Build PDF manual ------------------------------------------------------------------------
   .run_module(text = "Build PDF manual ...", f = devtools::build_manual(pkg = ".", path = paste0(pkg_name,".BuildResults/")))
 
-
-  # Install -------------------------------------------------------------------------------
-  cat("\n")
-  cli::cat_rule("Install package")
-  install.packages(
-    pkgs = list.files(paste0(pkg_name,".BuildResults"), pattern = ".tar.gz", full.names = TRUE),
-    repos = NULL,
-    type = "source",
-    clean = TRUE)
-
   ## Outro  -------------------------------------------------------------------------------
   cat("\n")
   cli::cat_rule("Outro")
@@ -163,6 +153,19 @@ build_package <- function(
 
   if(!"module_module_write_FunctionList" %in% exclude)
     .run_module(text = "Write function argument table (*.csv) ...", f = module_write_FunctionList())
+
+  if(!"module_write_codemetar" %in% exclude)
+    .run_module(text = "Create codemeta ...", f = module_write_codemetar())
+
+
+  # Install -------------------------------------------------------------------------------
+  cat("\n")
+  cli::cat_rule("Install package")
+  install.packages(
+    pkgs = list.files(paste0(pkg_name,".BuildResults"), pattern = ".tar.gz", full.names = TRUE),
+    repos = NULL,
+    type = "source",
+    clean = TRUE)
 
   ## Clean-up  -------------------------------------------------------------------------------
   cat("\n")
