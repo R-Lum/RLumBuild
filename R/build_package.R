@@ -89,6 +89,10 @@ build_package <- function(
   cat("\n")
   cli::cat_rule("Pre-build modules")
 
+  ##>> Update datalist
+  if(!"module_update_datalist" %in% exclude)
+    .run_module(text = "Update data/datalist ...", f = module_update_datalist())
+
   ##>> Attributes
   if(!"module_compile_Attributes" %in% exclude)
     .run_module(text = "Compile C/C++ attributes ...",f = module_compile_Attributes())
@@ -116,6 +120,7 @@ build_package <- function(
   ##>> Knit README
   if(!"module_knit_README" %in% exclude)
     .run_module(text = "Create README.md file ...", f = module_knit_README())
+
 
   # # Build source package ------------------------------------------------------------------------
   cat("\n")

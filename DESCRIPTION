@@ -1,7 +1,7 @@
 Package: RLumBuild
 Type: Package
 Title: RLum Universe Package Building
-Version: 0.1.4.9000-13
+Version: 0.1.4.9000-18
 Date: 2019-08-02
 Author: Sebastian Kreutzer [aut, cre] (<https://orcid.org/0000-0002-0734-2199>),
     Christoph Burow [aut] (<https://orcid.org/0000-0002-5023-4046>)
@@ -24,13 +24,14 @@ Imports:
   codemetar (>= 0.1.8),
   devtools (>= 2.0.2),
   miniCRAN (>= 0.2.11),
-  stringi (>= 1.4.3),
-  stringr (>= 1.4.0),
+  pander (>= 0.6.3),
+  pkgbuild (>= 1.0.3),
   roxygen2 (>= 6.1.1),
   Rcpp (>= 1.0.1),
   R2HTML (>= 2.3.2),
-  pander (>= 0.6.3),
-  pkgbuild (>= 1.0.3),
+  stringi (>= 1.4.3),
+  stringr (>= 1.4.0),
+  tools,
   xtable (>= 1.8-4)
 Encoding: UTF-8
 LazyData: true

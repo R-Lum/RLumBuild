@@ -10,6 +10,7 @@ header-includes:
 
 ## Changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
 
+* Add new module to automatically update `data/datalist` if data are shipped with the package
 * Add support for code meta data: https://ropensci.github.io/codemetar
 * Swap order: install now comes after the outro
 
