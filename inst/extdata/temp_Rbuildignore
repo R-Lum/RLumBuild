@@ -42,5 +42,8 @@
 ^vignettes/.*files$
 ^vignettes/.*\.xsyg$
 
+# -- README Graphics --
+^man\/figures\/README.*$
+
 # -- Exclude meta data stuff --
 ^codemeta\.json$
