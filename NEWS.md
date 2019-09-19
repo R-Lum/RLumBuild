@@ -7,14 +7,13 @@
 
 # News for package ‘RLumBuild’
 
-## Changes in version 0.1.4.9000-2 (2019-09-19)
+## Changes in version 0.1.4.9000-6 (2019-09-19)
 
   - Add new module to automatically update `data/datalist` if data are
     shipped with the package
   - Add support for code meta data:
     <https://ropensci.github.io/codemetar>
   - Swap order: install now comes after the outro
-  - Update .Rbuildignore to exclude figures
 
 ## Changes in version 0.1.3 (2019-07-31)
 
