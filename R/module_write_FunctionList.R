@@ -14,13 +14,13 @@ pkg_name <- .get_pkg_name()
 pkg_version <- .get_pkg_version()
 
 # Reading file ------------------------------------------------------------
-file.list.man <- list.files("man/", include.dirs = FALSE, pattern = ".Rd")
+file.list.man <- list.files(normalizePath("man/"), include.dirs = FALSE, pattern = ".Rd")
 
 ##exclude package itself
 file.list.man <- file.list.man[file.list.man != paste0(pkg_name,"-package.Rd")]
 
 ##set output file
-output.file <- paste0(pkg_name,".BuildResults/",pkg_name,"_",pkg_version,"-Functions.html")
+output.file <- normalizePath(paste0(pkg_name,".BuildResults/",pkg_name,"_",pkg_version,"-Functions.html"))
 
 ## run over files
 for(i in 1:length(file.list.man)) {
@@ -195,7 +195,7 @@ pander::panderOptions("table.style", "rmarkdown")
 pander::set.alignment("left")
 markdown.table <- gsub("<br />", " - ", capture.output(pander::pander(output)))
 write(markdown.table,
-      file = paste0(pkg_name,".BuildResults/",pkg_name,"_",pkg_version,"-Functions_Markdown.md"))
+      file = normalizePath(paste0(pkg_name,".BuildResults/",pkg_name,"_",pkg_version,"-Functions_Markdown.md")))
 
 ##we keep this out here.
 # for (i in 1:ncol(output)) {
