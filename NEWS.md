@@ -7,7 +7,7 @@
 
 # News for package ‘RLumBuild’
 
-## Changes in version 0.1.4.9000-18 (2019-10-10)
+## Changes in version 0.1.4.9000-22 (2019-11-27)
 
   - Add new module to automatically update `data/datalist` if data are
     shipped with the package
@@ -16,6 +16,8 @@
   - Swap order: install now comes after the outro
   - .Rbuildignore now knows update the log-files that needed to be
     excluded
+  - Slightly improve ’module\_add\_HowToCite()\` to avoid missing
+    whitespace between the package name and the package version
 
 ## Changes in version 0.1.3 (2019-07-31)
 

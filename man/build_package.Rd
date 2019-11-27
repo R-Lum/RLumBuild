@@ -4,8 +4,12 @@
 \alias{build_package}
 \title{Check and Build Package}
 \usage{
-build_package(path = ".", exclude = NULL, write_Rbuildignore = TRUE,
-  as_cran = FALSE)
+build_package(
+  path = ".",
+  exclude = NULL,
+  write_Rbuildignore = TRUE,
+  as_cran = FALSE
+)
 }
 \arguments{
 \item{path}{\link{character} (with default): set package path}
@@ -38,6 +42,6 @@ Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaign
 , RLum Developer Team} 
 
 \section{How to cite}{
-Kreutzer, S., 2019. build_package(): Check and Build Package. Function version 0.1.0. In: Kreutzer, S., Burow, C., 2019. RLumBuild: RLum Universe Package BuildingR package version 0.1.4.9000-18. https://github.com/R-Lum/RLumBuild
+Kreutzer, S., 2019. build_package(): Check and Build Package. Function version 0.1.0. In: Kreutzer, S., Burow, C., 2019. RLumBuild: RLum Universe Package Building. R package version 0.1.4.9000-22. https://github.com/R-Lum/RLumBuild
 }
 

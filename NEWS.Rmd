@@ -14,6 +14,8 @@ header-includes:
 * Add support for code meta data: https://ropensci.github.io/codemetar
 * Swap order: install now comes after the outro
 * .Rbuildignore now knows update the log-files that needed to be excluded
+* Slightly improve 'module_add_HowToCite()` to avoid missing whitespace between the package name
+and the package version
 
 ## Changes in version 0.1.3 (2019-07-31)
 

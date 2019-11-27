@@ -94,7 +94,7 @@ module_add_HowToCite <- function(){
                             ifelse(i == nrow(author.list.authorsOnly),"", ", "))
   }
   pkg.citation <- paste0(pkg.authors, ", ", format(Sys.time(), "%Y"), ". ",
-                         paste0(DESC_PACKAGE, ": ",DESC_TITLE),
+                         paste0(DESC_PACKAGE, ": ",DESC_TITLE, ". "),
                          paste0("R package version ", DESC_VERSION, ". "),
                          DESC_URL)
 
