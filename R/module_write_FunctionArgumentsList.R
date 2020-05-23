@@ -6,7 +6,7 @@
 #' This version programmatically fetches all functions and arguments and does
 #' not rely on parsing the .Rd files with regular expressions.
 #'
-#' @author Christoph Burow, Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (France)
+#' @author Christoph Burow, Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United Kingdom)
 #'
 #' @section Function version: 0.1.0
 #'
