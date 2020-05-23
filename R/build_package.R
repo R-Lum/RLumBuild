@@ -121,6 +121,10 @@ build_package <- function(
   if(!"module_knit_README" %in% exclude)
     .run_module(text = "Create README.md file ...", f = module_knit_README())
 
+  ##>> Compress PDF
+  if(!"module_compactVignette" %in% exclude)
+    .run_module(text = "Compress PDF Vignette ...", f = module_compactVignette())
+
 
   # # Build source package ------------------------------------------------------------------------
   cat("\n")
