@@ -7,7 +7,7 @@
 
 # News for package ‘RLumBuild’
 
-## Changes in version 0.1.4.9000-22 (2019-11-27)
+## Changes in version 0.1.4.9000-27 (2020-05-23)
 
   - Add new module to automatically update `data/datalist` if data are
     shipped with the package
@@ -18,6 +18,8 @@
     excluded
   - Slightly improve ’module\_add\_HowToCite()\` to avoid missing
     whitespace between the package name and the package version
+  - Add `module_compactVignette()` to ensure that the PDF vignettes are
+    not larger in size than needed
 
 ## Changes in version 0.1.3 (2019-07-31)
 
