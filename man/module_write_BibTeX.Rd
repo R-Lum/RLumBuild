@@ -18,10 +18,6 @@ Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United K
 , RLum Developer Team} 
 
 \section{How to cite}{
-<<<<<<< HEAD
-Kreutzer, S., 2019. module_write_BibTeX(): Create Package BibTeX file. Function version 0.1.0. In: Kreutzer, S., Burow, C., 2019. RLumBuild: RLum Universe Package BuildingR package version 0.1.3. https://github.com/R-Lum/RLumBuild
-=======
-Kreutzer, S., 2020. module_write_BibTeX(): Create Package BibTeX file. Function version 0.1.0. In: Kreutzer, S., Burow, C., 2020. RLumBuild: RLum Universe Package Building. R package version 0.1.4.9000-27. https://github.com/R-Lum/RLumBuild
->>>>>>> devel
+Kreutzer, S., 2020. module_write_BibTeX(): Create Package BibTeX file. Function version 0.1.0. In: Kreutzer, S., Burow, C., 2020. RLumBuild: RLum Universe Package Building. R package version 0.1.4. https://github.com/R-Lum/RLumBuild
 }
 
