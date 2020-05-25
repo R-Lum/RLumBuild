@@ -9,6 +9,9 @@ header-includes:
 # News for package 'RLumBuild'
 
 ## Changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
+*Dummy
+
+## Changes in version 0.1.4 (2020-05-25)
 
 * Add new module to automatically update `data/datalist` if data are shipped with the package
 * Add support for code meta data: https://ropensci.github.io/codemetar
