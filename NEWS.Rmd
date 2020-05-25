@@ -9,7 +9,7 @@ header-includes:
 # News for package 'RLumBuild'
 
 ## Changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
-*Dummy
+* Dummy
 
 ## Changes in version 0.1.4 (2020-05-25)
 

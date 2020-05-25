@@ -10,7 +10,7 @@
 **Build packages from the RLum-universe. A collection of tools and
 scripts to unify the building of packages.**
 
-[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 ![GitHub
 release](https://img.shields.io/github/release/R-Lum/RLumBuild.svg)
 ![GitHub Release

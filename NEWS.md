@@ -7,9 +7,9 @@
 
 # News for package ‘RLumBuild’
 
-## Changes in version 0.1.5.9000-2 (2020-05-25)
+## Changes in version 0.1.5.9000-3 (2020-05-25)
 
-\*Dummy
+  - Dummy
 
 ## Changes in version 0.1.4 (2020-05-25)
 
