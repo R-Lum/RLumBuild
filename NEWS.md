@@ -7,7 +7,7 @@
 
 # News for package ‘RLumBuild’
 
-## Changes in version 0.1.3 (2019-07-31)
+## Changes in version 0.1.4 (2020-05-25)
 
   - Add new module to automatically update `data/datalist` if data are
     shipped with the package
