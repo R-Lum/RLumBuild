@@ -14,8 +14,7 @@
   - Add support for code meta data:
     <https://ropensci.github.io/codemetar>
   - Swap order: install now comes after the outro
-  - .Rbuildignore now knows update the log-files that needed to be
-    excluded
+  - .Rbuildignore update to exclude log-files that needed to be excluded
   - Slightly improve ’module\_add\_HowToCite()\` to avoid missing
     whitespace between the package name and the package version
   - Add `module_compactVignette()` to ensure that the PDF vignettes are
