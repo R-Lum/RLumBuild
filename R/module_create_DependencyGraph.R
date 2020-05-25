@@ -8,7 +8,7 @@
 #'
 #' @param Rversion [character] (with default): R version for which the graph is created
 #'
-#' @author Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (France)
+#' @author Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United Kingdom)
 #'
 #' @note Module currently not acctivated
 #'

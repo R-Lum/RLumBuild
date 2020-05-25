@@ -3,7 +3,7 @@
 #' @description If the package was supported by the RLumTeam (the standard) the RLum-Team is added
 #' as author to all functions.
 #'
-#' @author Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (France)
+#' @author Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United Kingdom)
 #'
 #' @section Function version: 0.1.0
 #'

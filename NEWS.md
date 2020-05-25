@@ -7,6 +7,20 @@
 
 # News for package ‘RLumBuild’
 
+## Changes in version 0.1.4.9000-27 (2020-05-23)
+
+  - Add new module to automatically update `data/datalist` if data are
+    shipped with the package
+  - Add support for code meta data:
+    <https://ropensci.github.io/codemetar>
+  - Swap order: install now comes after the outro
+  - .Rbuildignore now knows update the log-files that needed to be
+    excluded
+  - Slightly improve ’module\_add\_HowToCite()\` to avoid missing
+    whitespace between the package name and the package version
+  - Add `module_compactVignette()` to ensure that the PDF vignettes are
+    not larger in size than needed
+
 ## Changes in version 0.1.3 (2019-07-31)
 
   - Remote checks were not activated by default if `as-cran` was `TRUE`,

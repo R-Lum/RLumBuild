@@ -10,7 +10,7 @@
 #'
 #' @param as_cran [logical] (with default): enable/disable `--as-cran` check
 #'
-#' @author Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (France)
+#' @author Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United Kingdom)
 #'
 #'
 #' @section Function version: 0.1.0
@@ -89,6 +89,10 @@ build_package <- function(
   cat("\n")
   cli::cat_rule("Pre-build modules")
 
+  ##>> Update datalist
+  if(!"module_update_datalist" %in% exclude)
+    .run_module(text = "Update data/datalist ...", f = module_update_datalist())
+
   ##>> Attributes
   if(!"module_compile_Attributes" %in% exclude)
     .run_module(text = "Compile C/C++ attributes ...",f = module_compile_Attributes())
@@ -117,6 +121,11 @@ build_package <- function(
   if(!"module_knit_README" %in% exclude)
     .run_module(text = "Create README.md file ...", f = module_knit_README())
 
+  ##>> Compress PDF
+  if(!"module_compactVignette" %in% exclude)
+    .run_module(text = "Compress PDF Vignette ...", f = module_compactVignette())
+
+
   # # Build source package ------------------------------------------------------------------------
   cat("\n")
   cli::cat_rule("Building package")
@@ -141,16 +150,6 @@ build_package <- function(
   # # Build PDF manual ------------------------------------------------------------------------
   .run_module(text = "Build PDF manual ...", f = devtools::build_manual(pkg = ".", path = paste0(pkg_name,".BuildResults/")))
 
-
-  # Install -------------------------------------------------------------------------------
-  cat("\n")
-  cli::cat_rule("Install package")
-  install.packages(
-    pkgs = list.files(paste0(pkg_name,".BuildResults"), pattern = ".tar.gz", full.names = TRUE),
-    repos = NULL,
-    type = "source",
-    clean = TRUE)
-
   ## Outro  -------------------------------------------------------------------------------
   cat("\n")
   cli::cat_rule("Outro")
@@ -163,6 +162,19 @@ build_package <- function(
 
   if(!"module_module_write_FunctionList" %in% exclude)
     .run_module(text = "Write function argument table (*.csv) ...", f = module_write_FunctionList())
+
+  if(!"module_write_codemetar" %in% exclude)
+      .run_module(text = "Create codemeta ...", f = module_write_codemetar())
+
+
+  # Install -------------------------------------------------------------------------------
+  cat("\n")
+  cli::cat_rule("Install package")
+  install.packages(
+    pkgs = list.files(paste0(pkg_name,".BuildResults"), pattern = ".tar.gz", full.names = TRUE),
+    repos = NULL,
+    type = "source",
+    clean = TRUE)
 
   ## Clean-up  -------------------------------------------------------------------------------
   cat("\n")

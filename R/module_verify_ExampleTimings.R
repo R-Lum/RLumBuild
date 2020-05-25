@@ -3,7 +3,7 @@
 #' @description Check and display the timing results of the example checks to avoid too long
 #' example runs.
 #'
-#' @author Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (France)
+#' @author Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United Kingdom)
 #'
 #' @section Function version: 0.1.0
 #'
@@ -21,19 +21,19 @@ temp.version <- sub(" ","",unlist(strsplit(temp,":"))[2])
 # CHECK EXAMPLE TIMING ----------------------------------------------------
 timing.threshold <- 3
 
-if(!file.exists(paste0(pkg_name,".BuildResults/",pkg_name,".Rcheck/",pkg_name,"-Ex.timings")) &&
-   !file.exists(paste0(pkg_name,".BuildResults/",pkg_name,".Rcheck/examples_x64/",pkg_name,"-Ex.timings")))
+if(!file.exists(normalizePath(paste0(pkg_name,".BuildResults/",pkg_name,".Rcheck/",pkg_name,"-Ex.timings"))) &&
+   !file.exists(normalizePath(paste0(pkg_name,".BuildResults/",pkg_name,".Rcheck/examples_x64/",pkg_name,"-Ex.timings"))))
   stop("[module_very_ExampleTimings()] Nothing to verify, the package does not run examples!", call. = FALSE)
 
 if (Sys.info()[["sysname"]] == "Windows") {
-  temp <- read.table(paste0(pkg_name,".BuildResults/",pkg_name,".Rcheck/examples_x64/",pkg_name,"-Ex.timings"), header=TRUE)
+  temp <- read.table(normalizePath(paste0(pkg_name,".BuildResults/",pkg_name,".Rcheck/examples_x64/",pkg_name,"-Ex.timings")), header=TRUE)
 
 } else {
-  temp <- read.table(paste0(pkg_name,".BuildResults/",pkg_name,".Rcheck/",pkg_name,"-Ex.timings"), header=TRUE)
+  temp <- read.table(normalizePath(paste0(pkg_name,".BuildResults/",pkg_name,".Rcheck/",pkg_name,"-Ex.timings")), header=TRUE)
 }
 
 ##plot values for the functions
-pdf(file=paste0(pkg_name,".BuildResults/", pkg_name,"-TimingExamples.",temp.version,".pdf"), paper="special")
+pdf(file=normalizePath(paste0(pkg_name,".BuildResults/", pkg_name,"-TimingExamples.",temp.version,".pdf")), paper="special")
 
 values <- barplot(rev(temp$elapsed), horiz=TRUE, xlim=c(0,10), cex.names=0.7,
                   beside=TRUE, names.arg=c(length(temp$name):1), las=1,
@@ -55,12 +55,12 @@ temp.threshold <- temp[temp$elapsed > timing.threshold, ]
 
 write.table(
   x = temp.threshold[, c(1, 4)],
-  file = paste0(
+  file = normalizePath(paste0(
     pkg_name,
     ".BuildResults/",pkg_name,"-Ex.timings.",
     temp.version,
     ".WARNING"
-  ),
+  )),
   row.names = FALSE,
   quote = FALSE,
   col.names = FALSE,

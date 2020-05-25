@@ -3,7 +3,7 @@
 #'@description Helper functions which are used internally to visualise the console output.
 #'Those functions are not in the overivew, but are, however, documented
 #'
-#'@author Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (France)
+#'@author Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United Kingdom)
 #'
 #'@keywords internal
 #'@md

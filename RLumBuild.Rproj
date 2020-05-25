@@ -14,5 +14,5 @@ LaTeX: XeLaTeX
 
 StripTrailingWhitespace: Yes
 
-BuildType: Custom
-CustomScriptPath: CHECK_AND_BUILD_macOS.sh
+BuildType: Makefile
+MakefilePath: ~/GitHub/RLumBuild
