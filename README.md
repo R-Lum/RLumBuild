@@ -120,6 +120,7 @@ more details.
   - [Luminescence](https://github.com/R-Lum/Luminescence)
   - [RCarb](https://github.com/R-Lum/RCarb)
   - [RLumModel](https://github.com/R-Lum/RLumModel)
+  - [RLumCarlo](https://github.com/R-Lum/RLumCarlo)
   - [rxylib](https://github.com/R-Lum/rxylib)
 
 ## <span class="glyphicon glyphicon-euro"></span> Funding

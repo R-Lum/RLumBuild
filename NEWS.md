@@ -7,9 +7,10 @@
 
 # News for package ‘RLumBuild’
 
-## Changes in version 0.1.5.9000-4 (2020-05-25)
+## Changes in version 0.1.5.9000-6 (2020-07-10)
 
-  - Dummy
+  - Make sure that we catch all `.Rhistory` and `.RData` files in the
+    folder
 
 ## Changes in version 0.1.4 (2020-05-25)
 
