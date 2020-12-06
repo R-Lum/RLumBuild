@@ -62,12 +62,12 @@ In conjunction with
 bash script allowing a full integration is more useful.
 
     #!/bin/bash
-    
+
     R -q -e "RLumBuild::build_package()"
 
 This script is stored in the package directory and connected with
-*RStudio* via *Project Options \>\> Build Tools \>\> Project Build Tools
-\>\> \[Custom\]*
+*RStudio* via *Project Options &gt;&gt; Build Tools &gt;&gt; Project
+Build Tools &gt;&gt; \[Custom\]*
 
 The function itself does not require arguments to run, however, it has
 arguments that can be used to control the build process:
@@ -116,19 +116,19 @@ more details.
 
 ## Projects using RLumBuild
 
-  - [BayLum](https://github.com/R-Lum/BayLum)
-  - [Luminescence](https://github.com/R-Lum/Luminescence)
-  - [RCarb](https://github.com/R-Lum/RCarb)
-  - [RLumModel](https://github.com/R-Lum/RLumModel)
-  - [RLumCarlo](https://github.com/R-Lum/RLumCarlo)
-  - [rxylib](https://github.com/R-Lum/rxylib)
+-   [BayLum](https://github.com/R-Lum/BayLum)
+-   [Luminescence](https://github.com/R-Lum/Luminescence)
+-   [RCarb](https://github.com/R-Lum/RCarb)
+-   [RLumModel](https://github.com/R-Lum/RLumModel)
+-   [RLumCarlo](https://github.com/R-Lum/RLumCarlo)
+-   [rxylib](https://github.com/R-Lum/rxylib)
 
 ## <span class="glyphicon glyphicon-euro"></span> Funding
 
-  - In 2019, the work of Sebastian Kreutzer as maintainer of the package
+-   In 2019, the work of Sebastian Kreutzer as maintainer of the package
     was supported by LabEx LaScArBxSK (ANR - n. ANR-10-LABX-52).
 
-  - From 2020, Sebastian Kreutzer as maintainer of the package received
+-   From 2020, Sebastian Kreutzer as maintainer of the package received
     funding from the European Union’s Horizon 2020 research and
     innovation programme under the Marie Skłodowska-Curie grant
     agreement No 844457.
