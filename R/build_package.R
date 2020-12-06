@@ -77,8 +77,10 @@ build_package <- function(
 
   ##>> Various files
   .run_module(text = "Remove .DS_Store ...", f = file.remove(".DS_Store"))
-  .run_module(text = "Remove .Rhistory ...", f = file.remove(".Rhistory"))
-  .run_module(text = "Remove .RData ...", f = file.remove(".RData"))
+  .run_module(text = "Remove .Rhistory ...", f = file.remove(list.files(pattern = ".Rhistory", all.files = TRUE, recursive = TRUE, include.dirs = TRUE, full.names = TRUE)))
+  .run_module(text = "Remove .RData ...", f = file.remove(
+    list.files
+    (pattern = ".RData", all.files = TRUE, recursive = TRUE, include.dirs = TRUE, full.names = TRUE)))
   .run_module(text = "Remove .RcppExports.cpp ...", f = file.remove("src/RcppExports.cpp"))
   .run_module(text = "Remove .RcppExports.R ...", f = file.remove("R/RcppExports.R"))
   .run_module(text = "Remove src/*.o ... ", f = file.remove(

@@ -7,47 +7,54 @@
 
 # News for package ‘RLumBuild’
 
+## Changes in version 0.1.5 (2020-12-06)
+
+-   Minimum R version requirement &gt;= 3.5.0
+-   Make sure that we catch all `.Rhistory` and `.RData` files in the
+    folder
+-   `.Rbuildignore` knows about the zenodo
+
 ## Changes in version 0.1.4 (2020-05-25)
 
-  - Add new module to automatically update `data/datalist` if data are
+-   Add new module to automatically update `data/datalist` if data are
     shipped with the package
-  - Add support for code meta data:
+-   Add support for code meta data:
     <https://ropensci.github.io/codemetar>
-  - Swap order: install now comes after the outro
-  - .Rbuildignore update to exclude log-files that needed to be excluded
-  - Slightly improve ’module\_add\_HowToCite()\` to avoid missing
+-   Swap order: install now comes after the outro
+-   .Rbuildignore update to exclude log-files that needed to be excluded
+-   Slightly improve ’module\_add\_HowToCite()\` to avoid missing
     whitespace between the package name and the package version
-  - Add `module_compactVignette()` to ensure that the PDF vignettes are
+-   Add `module_compactVignette()` to ensure that the PDF vignettes are
     not larger in size than needed
 
 ## Changes in version 0.1.3 (2019-07-31)
 
-  - Remote checks were not activated by default if `as-cran` was `TRUE`,
+-   Remote checks were not activated by default if `as-cran` was `TRUE`,
     this led to less rigour tests.
 
 ## Changes in version 0.1.2 (2019-07-30)
 
 ### `module_add_HowToCite()`
 
-  - Silence warnings by removing the cause
-  - Function now creates and addiational BIB-file with all the function
+-   Silence warnings by removing the cause
+-   Function now creates and addiational BIB-file with all the function
     citations in it
-  - If now patter `URL` was set in the DESCRIPTION file this module did
+-   If now patter `URL` was set in the DESCRIPTION file this module did
     not work
 
 ## Changes in version 0.1.1 (2019-05-08)
 
-  - Add build order: NEWS and README are created after the documentation
+-   Add build order: NEWS and README are created after the documentation
     was created, this allows customised scripts in the RMD-files and the
     version number is always consistent with the number from the build.
 
-  - Update and complete documentation
+-   Update and complete documentation
 
-  - `module_add_HowToCite()` now checks the URL field in the DESCRIPTION
+-   `module_add_HowToCite()` now checks the URL field in the DESCRIPTION
     file and double checks this URL
 
-  - `module_add_RLumTeam()` was never working and activated; now ok.
+-   `module_add_RLumTeam()` was never working and activated; now ok.
 
 ## Changes in version 0.1.0 (2019-05-03)
 
-  - Initial version
+-   Initial version

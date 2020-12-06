@@ -19,7 +19,7 @@ library(RLumBuild)
 
 **Build packages from the RLum-universe. A collection of tools and scripts to unify the building of packages.**
 
-[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 ![GitHub release](https://img.shields.io/github/release/R-Lum/RLumBuild.svg)
 ![GitHub Release Date](https://img.shields.io/github/release-date/R-Lum/RLumBuild.svg)
 
@@ -109,6 +109,7 @@ any later version.
 * [Luminescence](https://github.com/R-Lum/Luminescence)
 * [RCarb](https://github.com/R-Lum/RCarb)
 * [RLumModel](https://github.com/R-Lum/RLumModel)
+* [RLumCarlo](https://github.com/R-Lum/RLumCarlo)
 * [rxylib](https://github.com/R-Lum/rxylib)
 
 ## <span class="glyphicon glyphicon-euro"></span> Funding
@@ -117,6 +118,7 @@ any later version.
 by LabEx LaScArBxSK (ANR - n. ANR-10-LABX-52).
 
 * From 2020, Sebastian Kreutzer as maintainer of the package received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No 844457.
+
 
 ```{r Outro, echo=FALSE}
 detach("package:RLumBuild")
