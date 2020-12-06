@@ -9,6 +9,9 @@ header-includes:
 # News for package 'RLumBuild'
 
 ## Changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
+* Dummy
+
+## Changes in version 0.1.5 (2020-12-06)
 * Minimum R version requirement >= 3.5.0
 * Make sure that we catch all `.Rhistory` and `.RData` files in the folder
 * `.Rbuildignore` knows about the zenodo 

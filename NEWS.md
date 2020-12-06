@@ -7,6 +7,10 @@
 
 # News for package ‘RLumBuild’
 
+## Changes in version 0.1.6.9000-2 (2020-12-06)
+
+-   Dummy
+
 ## Changes in version 0.1.5 (2020-12-06)
 
 -   Minimum R version requirement &gt;= 3.5.0

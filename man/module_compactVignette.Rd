@@ -18,6 +18,6 @@ Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United K
 , RLum Developer Team} 
 
 \section{How to cite}{
-Kreutzer, S., 2020. module_compactVignette(): Module: compact_Vignette. Function version 0.1.0. In: Kreutzer, S., Burow, C., 2020. RLumBuild: RLum Universe Package Building. R package version 0.1.5. https://github.com/R-Lum/RLumBuild
+Kreutzer, S., 2020. module_compactVignette(): Module: compact_Vignette. Function version 0.1.0. In: Kreutzer, S., Burow, C., 2020. RLumBuild: RLum Universe Package Building. R package version 0.1.6.9000-2. https://github.com/R-Lum/RLumBuild
 }
 
