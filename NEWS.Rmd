@@ -9,7 +9,9 @@ header-includes:
 # News for package 'RLumBuild'
 
 ## Changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
-* Dummy
+* Add new import from the package `'jsonlite'`
+* Add support to automatically update relevant information in the `.zenodo.json` file
+(if such a file exists) which are: title, description and version number.
 
 ## Changes in version 0.1.5 (2020-12-06)
 * Minimum R version requirement >= 3.5.0

@@ -107,6 +107,10 @@ build_package <- function(
   if(!"module_set_VersionNumber" %in% exclude)
     .run_module(text = "Update DESCRIPTION: date and version number ...", f = module_set_VersionNumber())
 
+  #>> Update .zenodo.json file
+  if(!"module_update_zenodoJSON" %in% exclude)
+    .run_module(text = "Update .zenodo.json: ...", f = module_update_zenodoJSON())
+
   ##>> Add RLum Team
   if(!"module_add_RLumTeam" %in% exclude)
     .run_module(text = "Add RLum Developer Team ...", f = module_add_RLumTeam())
