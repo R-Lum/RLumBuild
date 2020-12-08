@@ -7,9 +7,12 @@
 
 # News for package ‘RLumBuild’
 
-## Changes in version 0.1.6.9000-2 (2020-12-06)
+## Changes in version 0.1.6.9000-8 (2020-12-08)
 
--   Dummy
+-   Add new import from the package `'jsonlite'`
+-   Add support to automatically update relevant information in the
+    `.zenodo.json` file (if such a file exists) which are: title,
+    description and version number.
 
 ## Changes in version 0.1.5 (2020-12-06)
 
