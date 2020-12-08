@@ -1,7 +1,7 @@
 #'@title RLumBuild Helper Functions
 #'
 #'@description Helper functions which are used internally to visualise the console output.
-#'Those functions are not in the overivew, but are, however, documented
+#'Those functions are not in the overview, but are, however, documented
 #'
 #'@author Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United Kingdom)
 #'
