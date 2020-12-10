@@ -11,7 +11,7 @@
 #'
 #'
 #' @export
-module_update_zenodoJSON<- function() {
+module_update_zenodoJSON <- function() {
 
   #check whether we have such a file, if not do nothing
   if(!file.exists(".zenodo.json"))
@@ -31,7 +31,7 @@ module_update_zenodoJSON<- function() {
 
 # Read JSON ---------------------------------------------------------------
   ##import
-  json <- jsonlite::fromJSON(txt = ".zenodo.json", simplifyVector = FALSE)
+  json <- jsonlite::fromJSON(txt = ".zenodo.json", simplifyVector = TRUE, flatten = TRUE)
 
   ##update
   json$title <- paste0(package,": ", title)
@@ -42,6 +42,5 @@ module_update_zenodoJSON<- function() {
   jsonlite::write_json(x = json, path = ".zenodo.json", pretty = TRUE)
 
   return(TRUE)
-
 }
 
