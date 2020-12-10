@@ -23,6 +23,7 @@ module_update_zenodoJSON <- function() {
 
   version <- .get_pkg_version()
   package <- .get_pkg_name()
+  date <- regmatches(x = temp, regexpr("(?<=Date:\\s).*", temp, perl = TRUE))
   title <- regmatches(x = temp, regexpr("(?<=Title:\\s).*", temp, perl = TRUE))
   description <- paste0(
     "<p>",
@@ -37,6 +38,7 @@ module_update_zenodoJSON <- function() {
   json$title <- paste0(package,": ", title)
   json$description <- description
   json$version <- version
+  json$publication_date <- date
 
 # Write JSON --------------------------------------------------------------
   jsonlite::write_json(x = json, path = ".zenodo.json", pretty = TRUE)
