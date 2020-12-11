@@ -41,7 +41,12 @@ module_update_zenodoJSON <- function() {
   json$publication_date <- date
 
 # Write JSON --------------------------------------------------------------
-  jsonlite::write_json(x = json, path = ".zenodo.json", pretty = TRUE)
+  jsonlite::write_json(
+    x = json,
+    path = ".zenodo.json",
+    pretty = TRUE,
+    auto_unbox = TRUE
+  )
 
   return(TRUE)
 }

@@ -42,6 +42,6 @@ Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United K
 , RLum Developer Team} 
 
 \section{How to cite}{
-Kreutzer, S., 2020. build_package(): Check and Build Package. Function version 0.1.0. In: Kreutzer, S., Burow, C., 2020. RLumBuild: RLum Universe Package Building. R package version 0.1.6.9000-13. https://github.com/R-Lum/RLumBuild
+Kreutzer, S., 2020. build_package(): Check and Build Package. Function version 0.1.0. In: Kreutzer, S., Burow, C., 2020. RLumBuild: RLum Universe Package Building. R package version 0.1.6.9000-17. https://github.com/R-Lum/RLumBuild
 }
 

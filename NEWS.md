@@ -7,7 +7,7 @@
 
 # News for package ‘RLumBuild’
 
-## Changes in version 0.1.6.9000-13 (2020-12-10)
+## Changes in version 0.1.6.9000-17 (2020-12-11)
 
 -   Add new import from the package `'jsonlite'`
 -   Add support to automatically update relevant information in the
