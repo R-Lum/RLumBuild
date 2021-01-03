@@ -45,7 +45,7 @@ Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United K
 , RLum Developer Team} 
 
 \section{How to cite}{
-Kreutzer, S., 2020. helpers(): RLumBuild Helper Functions. In: Kreutzer, S., Burow, C., 2020. RLumBuild: RLum Universe Package Building. R package version 0.1.6.9000-17. https://github.com/R-Lum/RLumBuild
+Kreutzer, S., 2021. helpers(): RLumBuild Helper Functions. In: Kreutzer, S., Burow, C., 2021. RLumBuild: RLum Universe Package Building. R package version 0.1.6.9000-18. https://github.com/R-Lum/RLumBuild
 }
 
 \keyword{internal}
