@@ -7,12 +7,14 @@
 
 # News for package ‘RLumBuild’
 
-## Changes in version 0.1.6.9000-18 (2021-01-03)
+## Changes in version 0.1.6.9000-20 (2021-02-12)
 
 -   Add new import from the package `'jsonlite'`
 -   Add support to automatically update relevant information in the
     `.zenodo.json` file (if such a file exists) which are: title,
     description and version number.
+-   Remove `Rplot.pdf` files eventually produced by manual `'testthat'`
+    runs
 
 ## Changes in version 0.1.5 (2020-12-06)
 
@@ -29,7 +31,7 @@
     <https://ropensci.github.io/codemetar>
 -   Swap order: install now comes after the outro
 -   .Rbuildignore update to exclude log-files that needed to be excluded
--   Slightly improve ’module\_add\_HowToCite()\` to avoid missing
+-   Slightly improve `module_add_HowToCite()` to avoid missing
     whitespace between the package name and the package version
 -   Add `module_compactVignette()` to ensure that the PDF vignettes are
     not larger in size than needed
