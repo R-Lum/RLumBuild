@@ -1,7 +1,7 @@
 Package: RLumBuild
 Type: Package
 Title: RLum Universe Package Building
-Version: 0.1.6
+Version: 0.1.7.9000
 Date: 2021-07-15
 Author: Sebastian Kreutzer [aut, cre] (<https://orcid.org/0000-0002-0734-2199>),
     Christoph Burow [aut] (<https://orcid.org/0000-0002-5023-4046>)
