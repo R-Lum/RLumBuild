@@ -3,13 +3,10 @@ on:
   push:
     branches:
       - master
-      - dev_*
-      - devel
+
   pull_request:
     branches:
       - master
-      - dev_*
-      - devel
 
 name: GitHub Actions CI
 
