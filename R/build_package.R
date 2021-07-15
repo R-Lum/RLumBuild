@@ -79,8 +79,10 @@ build_package <- function(
   .run_module(text = "Remove .DS_Store ...", f = file.remove(".DS_Store"))
   .run_module(text = "Remove .Rhistory ...", f = file.remove(list.files(pattern = ".Rhistory", all.files = TRUE, recursive = TRUE, include.dirs = TRUE, full.names = TRUE)))
   .run_module(text = "Remove .RData ...", f = file.remove(
-    list.files
-    (pattern = ".RData", all.files = TRUE, recursive = TRUE, include.dirs = TRUE, full.names = TRUE)))
+    list.files(pattern = ".RData", all.files = TRUE, recursive = TRUE, include.dirs = TRUE, full.names = TRUE)))
+  .run_module(text = "Remove tests/testthat/Rplots.pdf ...", f = file.remove(
+    list.files(path = "tests/testthat", pattern = "Rplots.pdf",
+               all.files = TRUE, recursive = TRUE, include.dirs = TRUE, full.names = TRUE)))
   .run_module(text = "Remove .RcppExports.cpp ...", f = file.remove("src/RcppExports.cpp"))
   .run_module(text = "Remove .RcppExports.R ...", f = file.remove("R/RcppExports.R"))
   .run_module(text = "Remove src/*.o ... ", f = file.remove(
@@ -106,6 +108,10 @@ build_package <- function(
   #>> Update version number
   if(!"module_set_VersionNumber" %in% exclude)
     .run_module(text = "Update DESCRIPTION: date and version number ...", f = module_set_VersionNumber())
+
+  #>> Update .zenodo.json file
+  if(!"module_update_zenodoJSON" %in% exclude)
+    .run_module(text = "Update .zenodo.json: ...", f = module_update_zenodoJSON())
 
   ##>> Add RLum Team
   if(!"module_add_RLumTeam" %in% exclude)
