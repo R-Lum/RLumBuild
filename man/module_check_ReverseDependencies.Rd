@@ -18,6 +18,6 @@ Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United K
 , RLum Developer Team} 
 
 \section{How to cite}{
-Kreutzer, S., 2021. module_check_ReverseDependencies(): Check Reverse Dependencies. Function version 0.1.0. In: Kreutzer, S., Burow, C., 2021. RLumBuild: RLum Universe Package Building. R package version 0.1.6.9000-20. https://github.com/R-Lum/RLumBuild
+Kreutzer, S., 2021. module_check_ReverseDependencies(): Check Reverse Dependencies. Function version 0.1.0. In: Kreutzer, S., Burow, C., 2021. RLumBuild: RLum Universe Package Building. R package version 0.1.6. https://github.com/R-Lum/RLumBuild
 }
 

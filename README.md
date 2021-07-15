@@ -64,8 +64,8 @@ bash script allowing a full integration is more useful.
     R -q -e "RLumBuild::build_package()"
 
 This script is stored in the package directory and connected with
-*RStudio* via *Project Options &gt;&gt; Build Tools &gt;&gt; Project
-Build Tools &gt;&gt; \[Custom\]*
+*RStudio* via *Project Options \>\> Build Tools \>\> Project Build Tools
+\>\> \[Custom\]*
 
 The function itself does not require arguments to run, however, it has
 arguments that can be used to control the build process:
