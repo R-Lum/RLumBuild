@@ -3,7 +3,7 @@
 #' @description Check and display the timing results of the example checks to avoid too long
 #' example runs.
 #'
-#' @author Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United Kingdom)
+#' @author Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)
 #'
 #' @section Function version: 0.1.0
 #'

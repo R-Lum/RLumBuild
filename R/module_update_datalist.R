@@ -3,7 +3,7 @@
 #' @description Updates the file `data/datalist` if available. The standard CRAN functionality
 #' only works for data > 1 MB. For whatever reason.
 #'
-#' @author Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United Kingdom)
+#' @author Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)
 #'
 #' @section Function version: 0.1.0
 #'

@@ -26,12 +26,12 @@ not rely on parsing the .Rd files with regular expressions.
 }
 
 \author{
-Christoph Burow, Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United Kingdom)
+Christoph Burow, Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)
 
-Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United Kingdom)
+Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)
 , RLum Developer Team} 
 
 \section{How to cite}{
-Burow, C., Kreutzer, S., 2021. module_write_FunctionList(): Write Function Argument List. Function version 0.1.0. In: Kreutzer, S., Burow, C., 2021. RLumBuild: RLum Universe Package Building. R package version 0.1.7.9000-1. https://github.com/R-Lum/RLumBuild
+Burow, C., Kreutzer, S., 2022. module_write_FunctionList(): Write Function Argument List. Function version 0.1.0. In: Kreutzer, S., Burow, C., 2022. RLumBuild: RLum Universe Package Building. R package version 0.1.7.9000-3. https://github.com/R-Lum/RLumBuild
 }
 

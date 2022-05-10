@@ -14,10 +14,10 @@ Check the reverse dependencies of the package
 }
 
 \author{
-Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United Kingdom)
+Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)
 , RLum Developer Team} 
 
 \section{How to cite}{
-Kreutzer, S., 2021. module_check_ReverseDependencies(): Check Reverse Dependencies. Function version 0.1.0. In: Kreutzer, S., Burow, C., 2021. RLumBuild: RLum Universe Package Building. R package version 0.1.7.9000-1. https://github.com/R-Lum/RLumBuild
+Kreutzer, S., 2022. module_check_ReverseDependencies(): Check Reverse Dependencies. Function version 0.1.0. In: Kreutzer, S., Burow, C., 2022. RLumBuild: RLum Universe Package Building. R package version 0.1.7.9000-3. https://github.com/R-Lum/RLumBuild
 }
 

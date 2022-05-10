@@ -7,6 +7,6 @@
 
 # News for package ‘RLumBuild’
 
-## Changes in version 0.1.7.9000-1 (2021-07-15)
+## Changes in version 0.1.7.9000-3 (2022-05-10)
 
 -   Dummy

@@ -11,7 +11,7 @@
 #' For release versions the patter `.9000` is removed from the DESCRIPTION file and nothing
 #' is done if the module is run.
 #'
-#' @author Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United Kingdom)
+#' @author Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)
 #'
 #' @section Function version: 0.1.0
 #'
