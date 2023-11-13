@@ -9,4 +9,4 @@ header-includes:
 # News for package 'RLumBuild'
 
 ## Changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
-* Dummy
+* `module_add_HowToCite()`: remove argument defunct by `stringi` 
