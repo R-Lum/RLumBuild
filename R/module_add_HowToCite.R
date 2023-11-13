@@ -115,9 +115,9 @@ module_add_HowToCite <- function(){
         paste(temp.file.man[title.start:c(title.end - 1)], collapse = " ")
       title <- stringi::stri_replace_all_regex(title, "\\\\title|\\{|\\}", "")
       title <-
-        stringi::stri_replace_all_regex(title, "\\\\code", "", ignore.case  = TRUE)
+        stringi::stri_replace_all_regex(title, "\\\\code", "")
       title <-
-        stringi::stri_replace_all_regex(title, '"', "'", ignore.case  = TRUE)
+        stringi::stri_replace_all_regex(title, '"', "'")
 
       ##search for start and end author field
       author.start <- which(grepl("\\\\author", temp.file.man))
