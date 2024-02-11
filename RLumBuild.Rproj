@@ -15,4 +15,4 @@ LaTeX: XeLaTeX
 StripTrailingWhitespace: Yes
 
 BuildType: Makefile
-MakefilePath: ~/GitHub/RLumBuild
+MakefilePath: /Users/kreutzer/GitHub/RLumBuild

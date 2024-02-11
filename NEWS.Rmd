@@ -10,3 +10,5 @@ header-includes:
 
 ## Changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
 * `module_add_HowToCite()`: remove argument defunct by `stringi` 
+* `module_add_HowToCite()`: exclude `-package` file from parsing
+* `module_add_RLumTeam()`: exclude `-package` file from parsing

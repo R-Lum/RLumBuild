@@ -7,6 +7,6 @@
 
 # News for package ‘RLumBuild’
 
-## Changes in version 0.1.7.9000-5 (2023-11-13)
+## Changes in version 0.1.7.9000-10 (2024-02-11)
 
 - `module_add_HowToCite()`: remove argument defunct by `stringi`

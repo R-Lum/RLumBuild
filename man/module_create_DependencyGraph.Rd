@@ -26,9 +26,4 @@ Module currently not acctivated
 
 \author{
 Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)
-, RLum Developer Team} 
-
-\section{How to cite}{
-Kreutzer, S., 2023. module_create_DependencyGraph(): Create Dependency Graph. Function version 0.1.0. In: Kreutzer, S., Burow, C., 2023. RLumBuild: RLum Universe Package Building. R package version 0.1.7.9000-5. https://github.com/R-Lum/RLumBuild
-}
-
+, RLum Developer Team}

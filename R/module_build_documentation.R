@@ -11,7 +11,7 @@
 #' @export
 module_build_documentation <- function() {
 
-   ##this is a workaroung and might not be necessary in the future
+   ##this is a workaround and might not be necessary in the future
    pkgbuild::compile_dll()
 
    ##create documentation

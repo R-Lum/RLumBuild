@@ -1,0 +1,35 @@
+"Name","Title","Description","Version","m.Date","m.Time","Author","Citation"
+"build_package","Check and Build Package","Central function to run the package build process.","0.1.0
+",NA,NA,"Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)<br /> , RLum Developer Team",NA
+"helpers","RLumBuild Helper Functions","Helper functions which are used internally to visualise the console output. Those functions are not in the overview, but are, however, documented",NA,NA,NA,"Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)<br /> , RLum Developer Team",NA
+"module_add_HowToCite","Add How to Cite Section","Adds a function tailored section 'How to Cite' to each manual page as long as author names and a section 'Function version' exists.",NA,NA,NA,"Christoph Burow (Germany), Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (Frange)<br /> , RLum Developer Team",NA
+"module_add_RLumTeam","Module: add RLum-Team and update version timestamp","If the package was supported by the RLumTeam (the standard) the RLum-Team is added as author to all functions.","0.1.0
+",NA,NA,"Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)<br /> , RLum Developer Team",NA
+"module_build_documentation","Module: Build Documentation","Create documentation using roxygen2","0.1.0
+",NA,NA,"Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)<br /> , RLum Developer Team",NA
+"module_check_ReverseDependencies","Check Reverse Dependencies","Check the reverse dependencies of the package","0.1.0
+",NA,NA,"Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)<br /> , RLum Developer Team",NA
+"module_compactVignette","Module: compact_Vignette","Try to further downsize the vignette, so far available","0.1.0
+",NA,NA,"Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)<br /> , RLum Developer Team",NA
+"module_compile_Attributes","Module: Compile attributes","Compile C++ attributes if such code is part of the package","0.1.0
+",NA,NA,"Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)<br /> , RLum Developer Team",NA
+"module_create_DependencyGraph","Create Dependency Graph","Create package dependency graph","0.1.0
+",NA,NA,"Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)<br /> , RLum Developer Team",NA
+"module_knit_NEWS","Module: Knit NEWS","Create NEWS.md from NEWS.Rmd","0.1.0
+",NA,NA,"Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)<br /> , RLum Developer Team",NA
+"module_knit_README","Module: Knit README","Create README.md from README.Rmd","0.1.0
+",NA,NA,"Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)<br /> , RLum Developer Team",NA
+"module_set_VersionNumber","Module: set_VersionNumber","Automatically set version number in DESCRIPTION file if the pattern '.9000' is found.","0.1.0
+",NA,NA,"Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)<br /> , RLum Developer Team",NA
+"module_update_datalist","Update datalist","Updates the file `data/datalist` if available. The standard CRAN functionality only works for data > 1 MB. For whatever reason.","0.1.0
+",NA,NA,"Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)<br /> , RLum Developer Team",NA
+"module_update_zenodoJSON","Module: Update .zenodo.json file","Automatically update the .zenodo.json file","0.1.0
+",NA,NA,"Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)<br /> , RLum Developer Team",NA
+"module_verify_ExampleTimings","Verify Example Timings","Check and display the timing results of the example checks to avoid too long example runs.","0.1.0
+",NA,NA,"Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)<br /> , RLum Developer Team",NA
+"module_write_BibTeX","Create Package BibTeX file","A BibTeX file to be used to cite the package is automatically created.","0.1.0
+",NA,NA,"Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)<br /> , RLum Developer Team",NA
+"module_write_codemetar","Create Codemetar JSON-LD file","Add JSON-LD file file to make the package more tracable","0.1.0
+",NA,NA,"Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)<br /> , RLum Developer Team",NA
+"module_write_FunctionList","Write Function Argument List","Create a spread-sheet table with all function arguments  Create a HTML and markdown list of all major functions in the package","0.1.0
+",NA,NA,"Christoph Burow, Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)<br /> <br /> Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)<br /> , RLum Developer Team",NA
