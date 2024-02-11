@@ -1,10 +1,10 @@
 # CI GitHub Action ... adapted from usethis::use_github_actions()
 on:
   push:
-    branches: [master, dev_*]
+    branches: [master, devel]
 
   pull_request:
-    branches: [master, dev_*]
+    branches: [master, devel]
 
 name: GitHub Actions CI
 
