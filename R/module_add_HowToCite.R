@@ -58,7 +58,7 @@ module_add_HowToCite <- function(){
     str <- stringi::stri_replace_all_coll(str, pattern = "Author: ", replacement = "")
     # remove all role contributions given in square brackets
     str <- strtrim(str, min(unlist(gregexpr("\\[|<", str))) - 2)
-    # remove all leading whitespaces
+    # remote whitespace
     str <- stringi::stri_trim(str, "left")
 
     # get surname
@@ -79,9 +79,11 @@ module_add_HowToCite <- function(){
   ## -------------------------------------------------------------------------- ##
   ## ADD CITATION ----
   ## -------------------------------------------------------------------------- ##
-
   ##add citation section
   file.list.man <- list.files("man/", recursive = TRUE, include.dirs = FALSE, pattern = "\\.Rd")
+
+    ## remove package Rd, this causes some problems
+    file.list.man <- file.list.man[grepl("-package", file.list.man, fixed = TRUE)]
 
   # build package citation
   pkg.authors <- character()
