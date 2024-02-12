@@ -114,19 +114,25 @@ more details.
 
 ## Projects using RLumBuild
 
--   [BayLum](https://github.com/R-Lum/BayLum)
--   [Luminescence](https://github.com/R-Lum/Luminescence)
--   [RCarb](https://github.com/R-Lum/RCarb)
--   [RLumModel](https://github.com/R-Lum/RLumModel)
--   [RLumCarlo](https://github.com/R-Lum/RLumCarlo)
--   [rxylib](https://github.com/R-Lum/rxylib)
+- [BayLum](https://github.com/R-Lum/BayLum)
+- [Luminescence](https://github.com/R-Lum/Luminescence)
+- [RCarb](https://github.com/R-Lum/RCarb)
+- [RLumModel](https://github.com/R-Lum/RLumModel)
+- [RLumCarlo](https://github.com/R-Lum/RLumCarlo)
+- [rxylib](https://github.com/R-Lum/rxylib)
 
 ## <span class="glyphicon glyphicon-euro"></span> Funding
 
--   In 2019, the work of Sebastian Kreutzer as maintainer of the package
-    was supported by LabEx LaScArBxSK (ANR - n. ANR-10-LABX-52).
+- In 2019, the work of Sebastian Kreutzer as maintainer of the package
+  was supported by [LabEx LaScArBx (ANR -
+  n. ANR-10-LABX-52)](https://lascarbx.labex.u-bordeaux.fr/en/).
 
--   From 2020, Sebastian Kreutzer as maintainer of the package received
-    funding from the European Union’s Horizon 2020 research and
-    innovation programme under the Marie Skłodowska-Curie grant
-    agreement No 844457.
+- 01/2020-04/2022: Sebastian Kreutzer as maintainer of the package has
+  received funding from the European Union’s Horizon 2020 research and
+  innovation programme under the Marie Skłodowska-Curie grant agreement
+  [No 844457 (CREDit)](https://cordis.europa.eu/project/id/844457), and
+  could continue maintaining the package.
+
+- since 03/2023: Sebastian Kreutzer as maintainer of the package
+  receives funding from the DFG Heisenberg programme [No
+  505822867](https://gepris.dfg.de/gepris/projekt/505822867).

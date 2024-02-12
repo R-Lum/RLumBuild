@@ -2,7 +2,7 @@
 #'
 #' @description Create documentation using roxygen2
 #'
-#' @author Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United Kingdom)
+#' @author Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)
 #'
 #' @section Function version: 0.1.0
 #'
@@ -11,7 +11,7 @@
 #' @export
 module_build_documentation <- function() {
 
-   ##this is a workaroung and might not be necessary in the future
+   ##this is a workaround and might not be necessary in the future
    pkgbuild::compile_dll()
 
    ##create documentation

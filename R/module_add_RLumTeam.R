@@ -3,7 +3,7 @@
 #' @description If the package was supported by the RLumTeam (the standard) the RLum-Team is added
 #' as author to all functions.
 #'
-#' @author Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United Kingdom)
+#' @author Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)
 #'
 #' @section Function version: 0.1.0
 #'
@@ -15,13 +15,16 @@ module_add_RLumTeam <- function() {
   file.list.man <- list.files("man/", recursive = TRUE, include.dirs = FALSE, pattern = "\\.Rd",
                               full.names = TRUE)
 
+    ## remove -package from the list
+    file.list.man <-  file.list.man[!grepl("-package", file.list.man, fixed = TRUE)]
+
   # Adding additional information ---------------------------------------------------------------
 
   ##Adding change time time stamp and the R Luminescence team to as package author
   for (i in file.list.man) {
     temp.file.man <-  readLines(i, warn = FALSE)
 
-    ##seach for start field
+    ##search for start field
     author.start <- which(grepl("\\author{",temp.file.man, fixed = TRUE))
 
     ##add luminescence team as author

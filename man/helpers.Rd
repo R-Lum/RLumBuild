@@ -41,11 +41,6 @@ Helper functions which are used internally to visualise the console output.
 Those functions are not in the overview, but are, however, documented
 }
 \author{
-Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United Kingdom)
-, RLum Developer Team} 
-
-\section{How to cite}{
-Kreutzer, S., 2021. helpers(): RLumBuild Helper Functions. In: Kreutzer, S., Burow, C., 2021. RLumBuild: RLum Universe Package Building. R package version 0.1.6. https://github.com/R-Lum/RLumBuild
-}
-
+Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)
+, RLum Developer Team}
 \keyword{internal}

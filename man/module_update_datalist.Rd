@@ -15,10 +15,5 @@ only works for data > 1 MB. For whatever reason.
 }
 
 \author{
-Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United Kingdom)
-, RLum Developer Team} 
-
-\section{How to cite}{
-Kreutzer, S., 2021. module_update_datalist(): Update datalist. Function version 0.1.0. In: Kreutzer, S., Burow, C., 2021. RLumBuild: RLum Universe Package Building. R package version 0.1.6. https://github.com/R-Lum/RLumBuild
-}
-
+Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)
+, RLum Developer Team}

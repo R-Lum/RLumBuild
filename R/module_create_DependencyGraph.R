@@ -8,7 +8,7 @@
 #'
 #' @param Rversion [character] (with default): R version for which the graph is created
 #'
-#' @author Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United Kingdom)
+#' @author Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)
 #'
 #' @note Module currently not acctivated
 #'

@@ -23,9 +23,4 @@ package version 0.1.1.9000-5. https://github.com/R-Lum/RLumBuild
 
 \author{
 Christoph Burow (Germany), Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (Frange)
-, RLum Developer Team} 
-
-\section{How to cite}{
-Burow, C., Kreutzer, S., 2021. module_add_HowToCite(): Add How to Cite Section. Function version 0.3.0. In: Kreutzer, S., Burow, C., 2021. RLumBuild: RLum Universe Package Building. R package version 0.1.6. https://github.com/R-Lum/RLumBuild
-}
-
+, RLum Developer Team}

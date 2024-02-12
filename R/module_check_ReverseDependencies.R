@@ -3,7 +3,7 @@
 #' @description Check the reverse dependencies of the package
 #'
 #'
-#' @author Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United Kingdom)
+#' @author Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)
 #'
 #' @section Function version: 0.1.0
 #'
