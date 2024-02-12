@@ -7,8 +7,4 @@
 
 # News for package ‘RLumBuild’
 
-## Changes in version 0.1.7 (2024-02-12)
-
-- `module_add_HowToCite()`: remove argument defunct by `stringi`
-- `module_add_HowToCite()`: exclude `-package` file from parsing
-- `module_add_RLumTeam()`: exclude `-package` file from parsing
+- Dummy
