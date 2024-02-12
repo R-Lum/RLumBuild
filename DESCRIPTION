@@ -2,7 +2,7 @@ Package: RLumBuild
 Type: Package
 Title: RLum Universe Package Building
 Version: 0.1.7
-Date: 2024-02-11
+Date: 2024-02-12
 Author: Sebastian Kreutzer [aut, cre] (<https://orcid.org/0000-0002-0734-2199>),
     Christoph Burow [aut] (<https://orcid.org/0000-0002-5023-4046>)
 Authors@R: c(
@@ -25,7 +25,7 @@ Imports:
   devtools (>= 2.4.5),
   jsonlite (>= 1.8.8),
   miniCRAN (>= 0.2.16),
-  pander (>= 0.6.6),
+  pander (>= 0.6.5),
   pkgbuild (>= 1.4.3),
   roxygen2 (>= 7.3.1),
   Rcpp (>= 1.0.12),
