@@ -7,4 +7,4 @@
 
 # News for package ‘RLumBuild’
 
-- Dummy
+- Fix `module_add_HowToCite()`
