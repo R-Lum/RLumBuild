@@ -83,7 +83,7 @@ module_add_HowToCite <- function(){
   file.list.man <- list.files("man/", recursive = TRUE, include.dirs = FALSE, pattern = "\\.Rd")
 
     ## remove package Rd, this causes some problems
-    file.list.man <- file.list.man[grepl("-package", file.list.man, fixed = TRUE)]
+    file.list.man <- file.list.man[!grepl("-package", file.list.man, fixed = TRUE)]
 
   # build package citation
   pkg.authors <- character()
@@ -224,7 +224,7 @@ module_add_HowToCite <- function(){
           ##write BibTeX file
           bib_file <- paste0(DESC_PACKAGE,".BuildResults/", DESC_PACKAGE,"_",DESC_VERSION,"-fun_bibliography.bib")
 
-          ##check if exsits or not
+          ##check if exits or not
           if(!file.exists(bib_file))
             write(x = character(), file = bib_file)
 
