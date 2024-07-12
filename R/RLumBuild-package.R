@@ -26,6 +26,5 @@
 #' @importFrom grDevices dev.off pdf
 #' @importFrom graphics abline barplot text plot
 #'
-#' @docType package
 #' @md
-NULL
+"_PACKAGE"
