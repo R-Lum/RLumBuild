@@ -42,8 +42,18 @@ module_add_HowToCite <- function(){
 
   }
 
-  authors <- DESC[grep("author", DESC, ignore.case = TRUE)[1]:
+  authors <- try(
+    {
+    DESC[grep("author", DESC, ignore.case = TRUE)[1]:
                   c(grep("author", DESC, ignore.case = TRUE)[2] - 1)]
+    },
+    silent = TRUE)
+
+  ## read the new version of authors
+  if(inherits(authors, "try-error")) {
+    dcf <- read.dcf("DESCRIPTION")
+    authors <- eval(parse(text = dcf[1,"Authors@R"]))
+  }
 
   ##remove [ths] ... means authors which have [ths] only
   if(any(grepl(authors, pattern = "[ths]", fixed = TRUE)))
@@ -74,7 +84,6 @@ module_add_HowToCite <- function(){
     df <- data.frame(name = name, surname = surname, author = is.auth)
     return(df)
   }))
-
 
   ## -------------------------------------------------------------------------- ##
   ## ADD CITATION ----
@@ -148,7 +157,7 @@ module_add_HowToCite <- function(){
           return(data.frame(included = included, position = pos))
         }, simplify = FALSE))
 
-        # retain order of occurence, assuming that the name first mentioned is
+        # retain order of occurrence, assuming that the name first mentioned is
         # also the main author of the function
         included.authors <- author.list[relevant.authors$included, ]
         included.authors <- included.authors[order(na.omit(relevant.authors$position)), ]
