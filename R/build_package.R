@@ -154,9 +154,8 @@ build_package <- function(
   if(!"module_verify_ExampleTimings" %in% exclude)
     .run_module(text = "Verify example timings ...", f = module_verify_ExampleTimings())
 
-
   # # Build PDF manual ------------------------------------------------------------------------
-  .run_module(text = "Build PDF manual ...", f = devtools::build_manual(pkg = ".", path = paste0(pkg_name,".BuildResults/")))
+  .run_module(text = "Build PDF manual ...", f = module_write_PDF_manual())
 
   ## Outro  -------------------------------------------------------------------------------
   cat("\n")

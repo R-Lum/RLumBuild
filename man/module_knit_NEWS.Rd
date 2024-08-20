@@ -15,4 +15,9 @@ Create NEWS.md from NEWS.Rmd
 
 \author{
 Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)
-, RLum Developer Team}
+, RLum Developer Team} 
+
+\section{How to cite}{
+Kreutzer, S., 2024. module_knit_NEWS(): Module: Knit NEWS. Function version 0.1.0. In: Kreutzer, S., Burow, C., 2024. RLumBuild: RLum Universe Package Building. R package version 0.1.8.9000-8. https://github.com/R-Lum/RLumBuild
+}
+
