@@ -8,3 +8,4 @@
 # News for package ‘RLumBuild’
 
 - Fix `module_add_HowToCite()`
+- Add `module_write_PDF_manual()`
