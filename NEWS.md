@@ -7,5 +7,5 @@
 
 # News for package ‘RLumBuild’
 
-- Fix `module_add_HowToCite()`
-- Add `module_write_PDF_manual()`
+- Update `module_add_HowToCite()` to work with a DESCRIPTION file
+  without author doubling.
