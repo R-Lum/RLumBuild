@@ -13,7 +13,7 @@ Automatically set version number in DESCRIPTION file if the pattern '.9000' is f
 If the package is under development it is somehow meaningful to easily distinguish
 between different build versions. In the R community the pattern `.9000` in a version number is
 used to declare a package under development. If such pattern is found, the module
-either adds `-1` or if already their, increase such number by `1` every time the package
+either adds `-1` or if already there, increase such number by `1` every time the package
 is built.
 
 For release versions the patter `.9000` is removed from the DESCRIPTION file and nothing
