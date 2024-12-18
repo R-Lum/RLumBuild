@@ -54,6 +54,9 @@
 ^codemeta\.json$
 ^\.zenodo\.json$
 
+# -- Exclude emacs stuff --
+.*~$
+
 
 # -- Package 'RLumBuild' stuff -- 
 ^RLumBuild\..*$

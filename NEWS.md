@@ -9,3 +9,4 @@
 
 - Update `module_add_HowToCite()` to work with a DESCRIPTION file
   without author doubling.
+- Update .Rbuildignore
