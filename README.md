@@ -15,7 +15,8 @@ scripts to unify the building of packages.**
 release](https://img.shields.io/github/release/R-Lum/RLumBuild.svg)
 ![GitHub Release
 Date](https://img.shields.io/github/release-date/R-Lum/RLumBuild.svg)
-[![R-CMD-check](https://github.com/R-Lum/RLumBuild/workflows/GitHub%20Actions%20CI/badge.svg)](https://github.com/R-Lum/RLumBuild/actions)
+[![GitHub Actions
+CI](https://github.com/R-Lum/RLumBuild/actions/workflows/GitHub_Actions_CI.yaml/badge.svg?branch=master)](https://github.com/R-Lum/RLumBuild/actions/workflows/GitHub_Actions_CI.yaml)
 
 Over the years our RLum-package universe expanded. At the same time
 building and maintaining the various packages became more and more
