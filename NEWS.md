@@ -9,4 +9,5 @@
 
 - Update `module_add_HowToCite()` to work with a DESCRIPTION file
   without author doubling.
-- Update .Rbuildignore
+- Update `.Rbuildignore`
+- Add ’testthat/\_snaps’ to `.Rbuildignore`
