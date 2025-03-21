@@ -32,6 +32,6 @@ Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)
 , RLum Developer Team} 
 
 \section{How to cite}{
-Burow, C., Kreutzer, S., 2025. module_write_FunctionList(): Write Function Argument List. Function version 0.1.0. In: Kreutzer, S., Burow, C., 2025. RLumBuild: RLum Universe Package Building. R package version 0.1.10.9000-18. https://github.com/R-Lum/RLumBuild
+Burow, C., Kreutzer, S., 2025. module_write_FunctionList(): Write Function Argument List. Function version 0.1.0. In: Kreutzer, S., Burow, C., 2025. RLumBuild: RLum Universe Package Building. R package version 0.1.10. https://github.com/R-Lum/RLumBuild
 }
 
