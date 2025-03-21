@@ -98,7 +98,7 @@ NULL
 
 
   ##check output
-  if(is.null(output) || length(output) == 0 || (class(output[[1]]) == "logical" && output[[1]] == FALSE)){
+  if(is.null(output) || length(output) == 0 || (inherits(output, "logical") && output[[1]] == FALSE)){
     .neutral(text)
 
   }else if(inherits(output, "try-error")){
