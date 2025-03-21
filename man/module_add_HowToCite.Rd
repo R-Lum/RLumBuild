@@ -26,6 +26,6 @@ Christoph Burow (Germany), Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Un
 , RLum Developer Team} 
 
 \section{How to cite}{
-Burow, C., Kreutzer, S., 2024. module_add_HowToCite(): Add How to Cite Section. Function version 0.3.0. In: Kreutzer, S., Burow, C., 2024. RLumBuild: RLum Universe Package Building. R package version 0.1.10.9000-11. https://github.com/R-Lum/RLumBuild
+Burow, C., Kreutzer, S., 2025. module_add_HowToCite(): Add How to Cite Section. Function version 0.3.0. In: Kreutzer, S., Burow, C., 2025. RLumBuild: RLum Universe Package Building. R package version 0.1.10.9000-18. https://github.com/R-Lum/RLumBuild
 }
 
