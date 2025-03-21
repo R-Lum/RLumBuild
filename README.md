@@ -10,7 +10,7 @@
 **Build packages from the RLum-universe. A collection of tools and
 scripts to unify the building of packages.**
 
-[![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://lifecycle.r-lib.org/articles/stages.html#maturing)
 ![GitHub
 release](https://img.shields.io/github/release/R-Lum/RLumBuild.svg)
 ![GitHub Release
@@ -21,7 +21,7 @@ CI](https://github.com/R-Lum/RLumBuild/actions/workflows/GitHub_Actions_CI.yaml/
 Over the years our RLum-package universe expanded. At the same time
 building and maintaining the various packages became more and more
 complex. While at the beginning we used tools, such as the `'devtools'`
-package, bugs and changes of the [CRAN](https://r-project.org)
+package, bugs and changes of the [CRAN](https://www.r-project.org/)
 requirements forced us to develop custom-tailored scripts. Those scripts
 where simple R-scripts loaded via `R CMD BATCH` from the terminal,
 however, it was tedious to handle them across different packages. On the
@@ -57,8 +57,8 @@ RLumBuild::build_package()
 ```
 
 In conjunction with
-[RStudio](https://www.rstudio.com/products/rstudio/download/) a short
-bash script allowing a full integration is more useful.
+[RStudio](https://posit.co/download/rstudio-desktop/) a short bash
+script allowing a full integration is more useful.
 
     #!/bin/bash
 
@@ -115,7 +115,7 @@ more details.
 
 ## Projects using RLumBuild
 
-- [BayLum](https://github.com/R-Lum/BayLum)
+- [BayLum](https://github.com/crp2a/BayLum)
 - [Luminescence](https://github.com/R-Lum/Luminescence)
 - [RCarb](https://github.com/R-Lum/RCarb)
 - [RLumModel](https://github.com/R-Lum/RLumModel)
@@ -126,7 +126,7 @@ more details.
 
 - In 2019, the work of Sebastian Kreutzer as maintainer of the package
   was supported by [LabEx LaScArBx (ANR -
-  n. ANR-10-LABX-52)](https://lascarbx.labex.u-bordeaux.fr/en/).
+  n. ANR-10-LABX-52)](https://anr.fr/ProjetIA-10-LABX-0052).
 
 - 01/2020-04/2022: Sebastian Kreutzer as maintainer of the package has
   received funding from the European Union’s Horizon 2020 research and
