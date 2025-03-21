@@ -40,7 +40,7 @@ build_package <- function(
   ##get pkg_name
   pkg_name <- .get_pkg_name()
 
-  # Retrive information -------------------------------------------------------------------------
+  # Retrieve information -------------------------------------------------------------------------
   cli::cat_rule("Environmental information")
   cat(crayon::blue(cli::symbol$arrow_right, "Using 'RLumBuild' version:", packageVersion("RLumBuild"), "\n"),sep = "")
   cat(crayon::blue(cli::symbol$arrow_right, "Working directory: ", getwd(), "\n"),sep = "")
@@ -51,10 +51,20 @@ build_package <- function(
 
   ##overwrite or create .Rbuildignore and add package stuff
   ##TODO might become part of an own module
-  if(write_Rbuildignore){
+  if(!as_cran[1] & write_Rbuildignore){
     .run_module(text = "Create/overwrite .Rbuildignore with standard ... ",
                 f = file.copy(
                   from = system.file("extdata", "temp_Rbuildignore", package="RLumBuild"),
+                  to = ".Rbuildignore", overwrite = TRUE))
+
+    ##add folders that start with the pkg_name
+    cat(paste0("\n\n# -- Package '",pkg_name,"' stuff -- \n^",pkg_name,"\\..*$"), file=".Rbuildignore", append = TRUE)
+
+  }
+  if(as_cran[1] & write_Rbuildignore){
+    .run_module(text = "Create/overwrite .Rbuildignore with CRAN standard ... ",
+                f = file.copy(
+                  from = system.file("extdata", "temp_Rbuildignore_CRAN", package="RLumBuild"),
                   to = ".Rbuildignore", overwrite = TRUE))
 
     ##add folders that start with the pkg_name
