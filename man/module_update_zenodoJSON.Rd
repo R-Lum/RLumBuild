@@ -10,15 +10,19 @@ module_update_zenodoJSON()
 Automatically update the .zenodo.json file
 }
 \details{
-A small helper to make sure that we have not to take care
-update `version`, `title` and `description` in the `zenodo.json` file
+A small helper to keep the `zenodo.json` file up to date. This takes care
+of the `version`, `title` and `description` fields. It the pacakge uses the
+`Authors@R` field, the funcion will warn if the author list needs to be
+updated manually (it cannot be done automatically because we do not record
+the affiliation in the DESCRIPTION file).
 }
 \section{Function version}{
- 0.1.0
+ 0.1.1
 }
 
 \author{
-Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)
+Sebastian Kreutzer, Institute of Geography, Heidelberg University (Germany)\cr
+Marco Colombo, Institute of Geography, Heidelberg University (Germany)
 , RLum Developer Team} 
 
 \section{How to cite}{

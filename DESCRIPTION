@@ -13,7 +13,7 @@ License: GPL-3
 BugReports: https://github.com/R-Lum/RLumBuild/issues
 URL: https://github.com/R-Lum/RLumBuild
 Depends:
-    R (>= 4.2.0), 
+    R (>= 4.4.0),
     utils
 Imports: 
   crayon (>= 1.5.2),

@@ -10,8 +10,5 @@ header-includes:
 
 # Changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
 
-* Update `module_add_HowToCite()` to work with a DESCRIPTION file without author doubling.
-* Update `.Rbuildignore `
-* Add alternative `.Rbuildignore` that is used in case `as_cran = TRUE`. This version 
-ensures that snapshot tests do not become part of the package, keeping the `tar.gz` size
-small. 
+* Update `module_update_zenodoJSON()` to warn if the list of authors in the
+`.zenodo.json` file needs to be updated.
