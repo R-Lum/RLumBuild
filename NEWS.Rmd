@@ -10,5 +10,7 @@ header-includes:
 
 # Changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
 
+* Add new file to `.Ruildignore`: `.affiliations.json`
+
 * Update `module_update_zenodoJSON()` to warn if the list of authors in the
 `.zenodo.json` file needs to be updated.
