@@ -49,6 +49,9 @@ build_package <- function(
   # Prebuild scripts ----------------------------------------------------------------------------
   cli::cat_rule("Pre-build housekeeping")
 
+  ## set the AS_CRAN environmental variable (see Luminescence issue #1478)
+  Sys.setenv(AS_CRAN = as_cran)
+
   ##overwrite or create .Rbuildignore and add package stuff
   ##TODO might become part of an own module
   if(!as_cran[1] & write_Rbuildignore){
@@ -218,4 +221,6 @@ build_package <- function(
 
   }
 
+  ## unset the AS_CRAN environmental variable
+  Sys.setenv(AS_CRAN = "")
 }
