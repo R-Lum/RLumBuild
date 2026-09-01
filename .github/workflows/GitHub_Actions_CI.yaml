@@ -24,7 +24,7 @@ jobs:
         config:
           - {os: windows-latest, r: 'release', not_cran: 'true'}
           - {os: windows-latest, r: 'devel', not_cran: 'true'}
-          - {os: macos-13,   r: 'release', not_cran: 'true'}
+          - {os: macos-latest,   r: 'release', not_cran: 'true'}
           - {os: ubuntu-latest,   r: 'devel', not_cran: 'true'}
           - {os: ubuntu-latest,   r: 'release', not_cran: 'true'} #OK
     env:
@@ -34,7 +34,7 @@ jobs:
       R_KEEP_PKG_SOURCE: yes
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: r-lib/actions/setup-pandoc@v2
 
