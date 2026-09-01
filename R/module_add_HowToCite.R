@@ -42,47 +42,22 @@ module_add_HowToCite <- function(){
 
   }
 
-  authors <- try(
-    {
-    DESC[grep("author", DESC, ignore.case = TRUE)[1]:
-                  c(grep("author", DESC, ignore.case = TRUE)[2] - 1)]
-    },
-    silent = TRUE)
-
   ## read the new version of authors
-  if(inherits(authors, "try-error")) {
-    dcf <- read.dcf("DESCRIPTION")
-    authors <- eval(parse(text = dcf[1,"Authors@R"]))
+  authors <- as.person(eval(parse(text = read.dcf("DESCRIPTION", "Authors@R"))))
+  if (length(authors) == 0) {
+    stop("RLumBuild only supports Authors@R")
   }
 
   ##remove [ths] ... means authors which have [ths] only
-  if(any(grepl(authors, pattern = "[ths]", fixed = TRUE)))
-    authors <- authors[-grep(authors, pattern = "[ths]", fixed = TRUE)]
+  authors <- authors[sapply(authors, function(x) !identical(x$role, "ths"))]
 
-  author.list <- do.call(rbind, lapply(authors, function(str) {
-
-    # check if person is author
-    is.auth <- grepl("aut", str)
-
-    # remove "Author: "
-    str <- stringi::stri_replace_all_coll(str, pattern = "Author: ", replacement = "")
-    # remove all role contributions given in square brackets
-    str <- strtrim(str, min(unlist(gregexpr("\\[|<", str))) - 2)
-    # remote whitespace
-    str <- stringi::stri_trim(str, "left")
-
-    # get surname
-    strsplit <- strsplit(str, " ")[[1]]
-    surname <- strsplit[length(strsplit)]
-
-    # get name
-    name <- character()
-    for (i in 1:c(length(strsplit)-1))
-      name <- paste0(name, strtrim(strsplit[i], 1), ".")
-
-    # bind as data.frame and return
-    df <- data.frame(name = name, surname = surname, author = is.auth)
-    return(df)
+  author.list <- do.call(rbind, lapply(authors, function(person) {
+    ## abbreviate each name to the first letter
+    name <- paste0(strtrim(unlist(strsplit(person$given, " ")), 1),
+                   ".", collapse = "")
+    data.frame(name = name,
+               surname = person$family,
+               author = any(person$role == "aut"))
   }))
 
   ## -------------------------------------------------------------------------- ##
