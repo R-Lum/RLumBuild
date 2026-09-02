@@ -153,7 +153,7 @@ module_add_HowToCite <- function(){
           which(grepl("\\\\section\\{Function version\\}", temp.file.man))
 
         if (length(fun.version) != 0) {
-          fun.version <- stringr::str_trim(strsplit(
+          fun.version <- trimws(strsplit(
             x = temp.file.man[fun.version + 1],
             split = "(",
             fixed = TRUE
