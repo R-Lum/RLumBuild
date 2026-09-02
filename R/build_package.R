@@ -42,9 +42,9 @@ build_package <- function(
 
   # Retrieve information -------------------------------------------------------------------------
   cli::cat_rule("Environmental information")
-  cat(crayon::blue(cli::symbol$arrow_right, "Using 'RLumBuild' version:", packageVersion("RLumBuild"), "\n"),sep = "")
-  cat(crayon::blue(cli::symbol$arrow_right, "Working directory: ", getwd(), "\n"),sep = "")
-  cat(crayon::blue(cli::symbol$arrow_right, "Package name: ", pkg_name,"\n\n"), sep = "")
+  cat(cli::col_blue(cli::symbol$arrow_right, "Using 'RLumBuild' version:", packageVersion("RLumBuild"), "\n"),sep = "")
+  cat(cli::col_blue(cli::symbol$arrow_right, "Working directory: ", getwd(), "\n"),sep = "")
+  cat(cli::col_blue(cli::symbol$arrow_right, "Package name: ", pkg_name,"\n\n"), sep = "")
 
   # Prebuild scripts ----------------------------------------------------------------------------
   cli::cat_rule("Pre-build housekeeping")

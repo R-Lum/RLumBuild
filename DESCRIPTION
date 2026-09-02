@@ -16,7 +16,6 @@ Depends:
     R (>= 4.4.0),
     utils
 Imports: 
-  crayon (>= 1.5.2),
   rmarkdown (>= 2.25),
   cli (>= 3.6.2),
   codemetar (>= 0.3.5),

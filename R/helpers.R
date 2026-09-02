@@ -16,7 +16,7 @@ NULL
 #'@md
 #'@export
 .running <- function(text = ""){
-  cat(crayon::yellow(cli::symbol$play), "\t", text, sep = "")
+  cat(cli::col_yellow(cli::symbol$play), "\t", text, sep = "")
 
 }
 
@@ -24,7 +24,7 @@ NULL
 #'@md
 #'@export
 .success <- function(text = ""){
-  cat("\r", crayon::green(cli::symbol$tick), "\t", text, sep = "")
+  cat("\r", cli::col_green(cli::symbol$tick), "\t", text, sep = "")
 
 }
 
@@ -33,7 +33,7 @@ NULL
 #'@md
 #'@export
 .failure <- function(text = ""){
-  cat("\r", crayon::red(cli::symbol$cross), "\t", text, sep = "")
+  cat("\r", cli::col_red(cli::symbol$cross), "\t", text, sep = "")
 
 }
 
@@ -42,7 +42,7 @@ NULL
 #'@md
 #'@export
 .neutral <- function(text = ""){
-  cat("\r", crayon::silver(cli::symbol$en_dash), "\t", text, sep = "")
+  cat("\r", cli::col_silver(cli::symbol$en_dash), "\t", text, sep = "")
 
 }
 
@@ -103,7 +103,7 @@ NULL
 
   }else if(inherits(output, "try-error")){
     .failure(text)
-    cat("\n\t", crayon::red(">>", output))
+    cat("\n\t", cli::col_red(">>", output))
 
   }else{
     .success(text)
