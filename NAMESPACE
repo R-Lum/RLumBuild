@@ -27,10 +27,14 @@ export(module_write_FunctionList)
 export(module_write_PDF_manual)
 export(module_write_codemetar)
 import(utils)
-importFrom(grDevices,dev.off)
-importFrom(grDevices,pdf)
-importFrom(graphics,abline)
-importFrom(graphics,barplot)
-importFrom(graphics,plot)
-importFrom(graphics,text)
+importFrom(grDevices,
+  dev.off,
+  pdf
+)
+importFrom(graphics,
+  abline,
+  barplot,
+  plot,
+  text
+)
 importFrom(stats,na.omit)

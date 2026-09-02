@@ -5,8 +5,7 @@
 \alias{RLumBuild-package}
 \alias{RLumBuild}
 \title{RLum Universe Package Building
-
-#' \if{html}{
+\if{html}{
 \figure{RLumBuild-logo.svg}{options: width="50px"}\cr
 }}
 \description{
@@ -32,6 +31,7 @@ Useful links:
 
 Authors:
 \itemize{
+  \item Sebastian Kreutzer \email{sebastian.kreutzer@uni-heidelberg.de} (\href{https://orcid.org/0000-0002-0734-2199}{ORCID})
   \item Christoph Burow (\href{https://orcid.org/0000-0002-5023-4046}{ORCID})
 }
 

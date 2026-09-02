@@ -1,6 +1,5 @@
 #' @title RLum Universe Package Building
-#'
-#'#' \if{html}{
+#' \if{html}{
 #' \figure{RLumBuild-logo.svg}{options: width="50px"}\cr
 #' }
 #'

@@ -34,6 +34,9 @@
 \item{expr}{\link{expression} (\strong{required}): R expression to be excecuted in silence, the results is piped
 through and the output muted (messages, warnings and usual terminal prints). Errors are returned.}
 
+\item{f}{\link{function} (\strong{required}): function to be run, the results are analysed and
+summarised using the a one line terminal output}
+
 \item{shut_up}{\link{logical} (with default): enables/disables shut_up mode}
 }
 \description{

@@ -74,10 +74,9 @@ NULL
   invisible(y)
 }
 
-
 #'@rdname helpers
 #'
-#'@export f [function] (**required**): function to be run, the results are analysed and
+#'@param f [function] (**required**): function to be run, the results are analysed and
 #'summarised using the a one line terminal output
 #'
 #'@param shut_up [logical] (with default): enables/disables shut_up mode
