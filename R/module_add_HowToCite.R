@@ -90,7 +90,7 @@ module_add_HowToCite <- function(){
     # determine function and title
     fun <-
       temp.file.man[grep("\\\\name", temp.file.man, ignore.case = TRUE)]
-    fun <- stringi::stri_replace_all_regex(fun, "\\\\name|\\{|\\}", "")
+    fun <- gsub("\\\\name|\\{|\\}", "", fun)
 
     title.start <-
       grep("\\\\title", temp.file.man, ignore.case = TRUE)
@@ -99,11 +99,9 @@ module_add_HowToCite <- function(){
     if (length(title.end) != 0) {
       title <-
         paste(temp.file.man[title.start:c(title.end - 1)], collapse = " ")
-      title <- stringi::stri_replace_all_regex(title, "\\\\title|\\{|\\}", "")
-      title <-
-        stringi::stri_replace_all_regex(title, "\\\\code", "")
-      title <-
-        stringi::stri_replace_all_regex(title, '"', "'")
+      title <- gsub("\\\\title|\\{|\\}", "", title)
+      title <- gsub("\\\\code", "", title)
+      title <- gsub('"', "'", title)
 
       ##search for start and end author field
       author.start <- which(grepl("\\\\author", temp.file.man))
@@ -123,7 +121,7 @@ module_add_HowToCite <- function(){
 
         relevant.authors <- do.call(rbind, sapply(as.character(author.list$surname), function(x) {
           str <- paste(temp.file.man[author.start:author.end], collapse = " ")
-          str <- stringi::stri_replace_all_regex(str, ",|\\.", " ")
+          str <- gsub(",|\\.", " ", str)
           included <- grepl(paste0(" ", x, " "), str, ignore.case = TRUE)
           if (included)
             pos <- regexpr(x, str)[[1]]

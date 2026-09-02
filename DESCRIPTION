@@ -1,8 +1,8 @@
 Package: RLumBuild
 Type: Package
 Title: RLum Universe Package Building
-Version: 0.1.10.9000-2
-Date: 2026-01-12
+Version: 0.1.10.9000-4
+Date: 2026-09-02
 Authors@R: c(
     person("Sebastian", "Kreutzer", role = c("aut", "cre"), email = "sebastian.kreutzer@uni-heidelberg.de", comment = c(ORCID = "0000-0002-0734-2199")),
     person("Christoph", "Burow", role = c("aut"), comment = c(ORCID = "0000-0002-5023-4046")))
@@ -27,7 +27,6 @@ Imports:
   roxygen2 (>= 7.3.1),
   Rcpp (>= 1.0.12),
   R2HTML (>= 2.3.3),
-  stringi (>= 1.8.3),
   tools,
   xtable (>= 1.8-4)
 Encoding: UTF-8
