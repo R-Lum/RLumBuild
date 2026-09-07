@@ -49,7 +49,7 @@ A packages builds by simply calling
 RLumBuild::build_package()
 ```
 
-In conjunction with [RStudio](https://posit.co/download/rstudio-desktop/) a 
+In conjunction with [RStudio](https://posit.co/) a 
 short bash script allowing a full integration is more useful. 
 
 ```{}
@@ -121,10 +121,9 @@ any later version.
   innovation programme under the Marie Skłodowska-Curie grant agreement
   [No 844457 (CREDit)](https://cordis.europa.eu/project/id/844457), and
   could continue maintaining the package.
-
 * since 03/2023: Sebastian Kreutzer as maintainer of the package
   receives funding from the DFG Heisenberg programme [No
-  505822867](https://gepris.dfg.de/gepris/projekt/505822867).
+  505822867](https://gepris.dfg.de/project/505822867).
 
 ```{r Outro, echo=FALSE}
 detach("package:RLumBuild")

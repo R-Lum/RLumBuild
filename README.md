@@ -56,9 +56,8 @@ A packages builds by simply calling
 RLumBuild::build_package()
 ```
 
-In conjunction with
-[RStudio](https://posit.co/download/rstudio-desktop/) a short bash
-script allowing a full integration is more useful.
+In conjunction with [RStudio](https://posit.co/) a short bash script
+allowing a full integration is more useful.
 
     #!/bin/bash
 
@@ -136,4 +135,4 @@ more details.
 
 - since 03/2023: Sebastian Kreutzer as maintainer of the package
   receives funding from the DFG Heisenberg programme [No
-  505822867](https://gepris.dfg.de/gepris/projekt/505822867).
+  505822867](https://gepris.dfg.de/project/505822867).
