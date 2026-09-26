@@ -53,8 +53,12 @@ module_add_HowToCite <- function(){
 
   author.list <- do.call(rbind, lapply(authors, function(person) {
     ## abbreviate each name to the first letter
-    name <- paste0(strtrim(unlist(strsplit(person$given, " ")), 1),
-                   ".", collapse = "")
+    name <- if(is.null(person$given))
+      ""
+    else
+      paste0(strtrim(unlist(strsplit(person$given, " ")), 1),
+             ".", collapse = "")
+
     data.frame(name = name,
                surname = person$family,
                author = any(person$role == "aut"))
