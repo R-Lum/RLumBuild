@@ -1,11 +1,12 @@
 Package: RLumBuild
 Type: Package
 Title: RLum Universe Package Building
-Version: 0.1.10.9000-4
-Date: 2026-09-02
+Version: 0.1.11
+Date: 2026-09-26
 Authors@R: c(
     person("Sebastian", "Kreutzer", role = c("aut", "cre"), email = "sebastian.kreutzer@uni-heidelberg.de", comment = c(ORCID = "0000-0002-0734-2199")),
-    person("Christoph", "Burow", role = c("aut"), comment = c(ORCID = "0000-0002-5023-4046")))
+    person("Christoph", "Burow", role = c("aut"), comment = c(ORCID = "0000-0002-5023-4046")),
+    person("Marco", "Colombo", role = c("aut"), comment = c(ORCID = "0000-0001-6672-0623")))
 Maintainer: Sebastian Kreutzer <sebastian.kreutzer@uni-heidelberg.de>
 Description: Build packages from the RLum-universe. 
   A collection of tools and scripts to unify the building of packages.
@@ -13,22 +14,22 @@ License: GPL-3
 BugReports: https://github.com/R-Lum/RLumBuild/issues
 URL: https://github.com/R-Lum/RLumBuild
 Depends:
-    R (>= 4.4.0),
-    utils
+    R (>= 4.5.0)
 Imports: 
-  rmarkdown (>= 2.25),
-  cli (>= 3.6.2),
-  codemetar (>= 0.3.5),
-  devtools (>= 2.4.5),
-  jsonlite (>= 1.8.8),
-  miniCRAN (>= 0.2.16),
-  pander (>= 0.6.5),
-  pkgbuild (>= 1.4.3),
-  roxygen2 (>= 7.3.1),
-  Rcpp (>= 1.0.12),
-  R2HTML (>= 2.3.3),
+  rmarkdown (>= 2.32),
+  cli (>= 3.6.6),
+  codemetar (>= 0.3.7),
+  devtools (>= 2.5.2),
+  jsonlite (>= 2.0.0),
+  miniCRAN (>= 0.3.2),
+  pander (>= 0.6.6),
+  pkgbuild (>= 1.4.8),
+  roxygen2 (>= 8.1.0),
+  Rcpp (>= 1.1.2),
+  R2HTML (>= 2.3.4),
   tools,
-  xtable (>= 1.8-4)
+  utils,
+  xtable (>= 1.8-8)
 Encoding: UTF-8
 LazyData: true
 Config/roxygen2/version: 8.1.0
