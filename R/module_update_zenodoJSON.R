@@ -46,8 +46,9 @@ module_update_zenodoJSON <- function() {
       ## skip thesis supervisor
       if ("ths" %in% entry$role)
         return(NULL)
-      name <- sprintf("%s, %s", entry$family, entry$given %||% "")
+      name <- sprintf("%s, %s", entry$family %||% "", entry$given %||% "")
       orcid <- unname(entry$comment["ORCID"]) %||% ""
+
       data.frame(name, orcid)
     }))
     aut.json <- json$creators[, c("name", "orcid")]

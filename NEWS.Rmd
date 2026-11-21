@@ -10,4 +10,6 @@ header-includes:
 
 # Changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
 
+### `module_update_zenodoJSON()`
 
+* Account for another particularity when extracting authors data 
