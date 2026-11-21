@@ -31,7 +31,6 @@ build_package <- function(
   exclude = NULL,
   write_Rbuildignore = TRUE,
   as_cran = FALSE
-
 ){
 
   ##set path
@@ -54,25 +53,18 @@ build_package <- function(
 
   ##overwrite or create .Rbuildignore and add package stuff
   ##TODO might become part of an own module
-  if(!as_cran[1] & write_Rbuildignore){
-    .run_module(text = "Create/overwrite .Rbuildignore with standard ... ",
+  if (write_Rbuildignore) {
+    text <- sprintf("Create/overwrite .Rbuildignore with %s ... ",
+                    ifelse(as_cran[1], "CRAN standard", "standard"))
+    from <- paste0("temp_Rbuildignore", ifelse(as_cran[1], "_CRAN", ""))
+    .run_module(text = text,
                 f = file.copy(
-                  from = system.file("extdata", "temp_Rbuildignore", package="RLumBuild"),
+                  from = system.file("extdata", from, package = "RLumBuild"),
                   to = ".Rbuildignore", overwrite = TRUE))
 
-    ##add folders that start with the pkg_name
-    cat(paste0("\n\n# -- Package '",pkg_name,"' stuff -- \n^",pkg_name,"\\..*$"), file=".Rbuildignore", append = TRUE)
-
-  }
-  if(as_cran[1] & write_Rbuildignore){
-    .run_module(text = "Create/overwrite .Rbuildignore with CRAN standard ... ",
-                f = file.copy(
-                  from = system.file("extdata", "temp_Rbuildignore_CRAN", package="RLumBuild"),
-                  to = ".Rbuildignore", overwrite = TRUE))
-
-    ##add folders that start with the pkg_name
-    cat(paste0("\n\n# -- Package '",pkg_name,"' stuff -- \n^",pkg_name,"\\..*$"), file=".Rbuildignore", append = TRUE)
-
+    ## add folders that start with the pkg_name
+    cat("\n\n# -- Package '", pkg_name, "' stuff -- \n^", pkg_name, "\\..*$\n",
+        file = ".Rbuildignore", sep = "", append = TRUE)
   }
 
   ##check whether we have to create folders
